@@ -1,0 +1,198 @@
+:root {
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --char-multiplier: 0.29dvw;
+    --focus-colour: 0 0 1px 2px rgb(234, 174, 61);
+    --background-light: rgb(237, 241, 247);
+    --background-main: rgb(250,250,250);
+    --imageFrame-width: 360px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /*scroll-behavior: smooth;*/
+}
+html {
+    color-scheme: normal;
+    font-size: clamp(0.8rem, 1dvw, 1.25rem);
+} 
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.5;
+    background-color: var(--background-main);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+.textBox {
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.imageCase {
+    max-width: 360px;
+    max-height: auto;
+    margin: auto;
+    padding: 1rem;
+    
+}
+.imageFrameContainer {
+    max-width: auto;
+    max-height: 360px;
+    padding:3px;
+    /*border: 1px double #302f2f ;*/
+}
+.imageFrame {
+    max-width: var(--imageFrame-width);
+    max-height: 260px;
+    position: relative;
+    padding: 2px;
+    transition: all 400ms ease-in-out;
+    background-color: rgb(116, 18, 18);
+    border-radius: 5px;
+    border: 10px black solid;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+}
+/* Additional design added to image cards to look like a laptop */
+    .imageFrame:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: -7px;
+        background: white;
+        display: block;
+        transform: translate(-50%, -50%);
+        box-shadow: inset 0 1px 2px 0 gray;
+    }
+    .imageFrame-bottom {
+        max-width: var(--imageFrame-width);
+        height: 17px;
+        background-color: rgb(145, 145, 145);
+        border-radius: 0 0 30px 30px;
+        margin: 1px 0 0 0;
+        border-bottom: 2px solid;
+    }
+    .feet {
+        max-width: 100%;
+        height: 1.5px;
+        border-radius: 10px;
+        margin: 0 15px;
+        background: linear-gradient(
+            to right,
+            rgb(107, 106, 106) 10%, 
+            transparent 10%, 
+            transparent 90%,
+            rgb(107,106,106) 90%,
+            rgb(107,106,106) 100%);
+    }
+    .imageFrame-bottom.reflect {
+        transform: rotate(180deg) ;
+        mask-image: linear-gradient(transparent 50%, white 95%);
+        opacity: 0.5;
+        margin: 0;
+    }
+    
+    .imageFrame:hover img{
+        filter: brightness(110%);
+        box-shadow: none;
+    }
+    
+    .imageFrame img {
+        width: 310px;
+        height: 190px;
+        border-radius: 0 0 0 0;
+    }
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    }
+    .reveal.active {
+        opacity: 1;
+    }
+    .active.fade-bottom {
+        animation: fade-bottom 1s linear;
+    }
+    .active.fade-left {
+        animation: fade-left 1s ease-in-out;
+    }
+    .active.fade-right {
+        animation: fade-right 1s ease-in-out;
+    }
+    .active.fade-in {
+        animation: fade-in 1s ease-in-out;
+    }
+    .active.img-animate {
+        animation: img-animate 3s ease-in-out;
+    }
+    @keyframes img-animate {
+        0% {
+            transform: scale(1.0) rotate(-2deg);
+            opacity: 0;
+        }
+        100% {
+            
+            opacity: 1.0;
+        }
+    }
+    @keyframes fade-bottom {
+        0% {
+        transform: translateY(50px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-left {
+        0% {
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-right {
+        0% {
+        transform: translateX(100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
