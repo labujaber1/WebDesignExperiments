@@ -24,53 +24,69 @@
                 <img src="/SinglePageTheme/images/movingBanner.gif" alt="" width="30" height="24" class="d-inline-block align-text-top rounded-circle">
                 Navbar
             </a>
-            <em><span class="navbar-text text-capitalize text-bg-primary px-2">Changing the colour theme every day</span></em>
+            <em><span id="nav_inline_text" class="navbar-text text-capitalize text-bg-warning px-2">Changing the colour theme every day</span></em>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">        
                   <a class="nav-link active" aria-current="page" href="#">Current Home</a>         
-                  <a class="nav-link" href="/index.html">Main Page</a>          
-                  <a class="nav-link" href="#">Link</a>
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="/index.html">Back to Main Page</a>          
+                  <a class="nav-link" href="#">Link to nowhere</a>
+                  <a class="nav-link" href="#">Link to nowhere</a>
               </ul>
             </div>
-          </div>
+        </div>
     </nav>
 
-    <div id="hero_section" class="carousel">
-        <img src="/SinglePageTheme/images/Blue_Banner.png" class="img-fluid d-block w-100" alt="Hero image">
-        <div class="carousel-caption ">
-            <h1>Hero section,</h1>
-            <p>lorem ipsum dolor sit</p>
+    <div class="container-fluid p-0">
+        <div id="hero_section" class="carousel slide pb-3 bg-black" data-bs-ride="carousel" >
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="/SinglePageTheme/images/Blue_Banner_short.png"  alt="Hero image" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="/SinglePageTheme/images/Blue_Banner_Graphic_short.png"  alt="Hero image" class="d-block w-100">
+                </div>
+            </div>
+            <div class="carousel-caption text-start m-0 p-0">
+                <h1 class="fw-bold display-3">Hero section,</h1>
+                <p class="fs-4 text-black fw-semibold mb-sm-5">lorem ipsum dolor sit</p>
+                
+            </div>
         </div>
     </div>
     
     <header>
-        <div id="container_text1" class="container-fluid ">
-            <div class="row bg-white row-cols-1 row-cols-md-3 pb-5">
-                <div class="col text-md-center bg-dark text-white mb-1">
+        <div id="container_text1" class="container-fluid">
+            <div class="row bg-white row-cols-1 row-cols-md-3 ">
+                <div id="header_container1" class="col text-md-center text-bg-dark mb-1 p-4">
                     <section>
                         <h2>LOREM HEADING</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid. A eos culpa nisi molestias ut ducimus?
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p><img src="/SinglePageTheme/images/Blue_Banner.png" alt="banner" width="100px"></p> 
+                            <p>Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid.
                             <span><img src="/SinglePageTheme/images/Beans.gif" alt="beans" width="100px"></span>
                         </p>
                     </section>                 
                 </div>
-                <div class="col text-md-center bg-info mb-1">
+                <div id="header_container2" class="col text-md-center text-bg-info mb-1 p-4">
                     <section>
                         <h2>LOREM HEADING</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid. A eos culpa nisi molestias ut ducimus?
-                            <span><img src="/SinglePageTheme/images/Blue_Banner_Graphic.png" alt="banner" width="100px"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <p><img src="/SinglePageTheme/images/snail.gif" alt="banner" width="100px"></p> 
+                            <p>Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid. 
+                            <span><img src="/SinglePageTheme/images/Blue_Banner.png" alt="banner" width="100px"></span>
                         </p>
                     </section>
                 </div>
-                <div class="col text-md-center bg-light mb-1">
+                <div id="header_container3" class="col text-md-center text-bg-light mb-1 p-4">
                     <section>
                         <h2>LOREM HEADING</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid. A eos culpa nisi molestias ut ducimus?
-                            <span><img src="/SinglePageTheme/images/snail.gif" alt="snail" width="100px"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p><img src="/SinglePageTheme/images/Blue_Banner.png" alt="banner" width="100px"></p>  
+                            <p>Cupiditate sint dicta enim, magni accusantium eum iusto necessitatibus soluta, eos eaque nihil accusamus aliquid. 
+                            <span><img src="/SinglePageTheme/images/Beans.gif" alt="snail" width="100px"></span>
                         </p>
                     </section>
                 </div>
@@ -78,11 +94,28 @@
         </div>
     </header>
 
-    <div id="image_filler"
+    <div id="image_filler" class="_container_colour_split">
+        <div class="d-flex">
+            <div class="col">
+                <div class="text-start text-black ps-2 pe-5 me-5 mt-4">
+                    <h4 class="fw-bolder">Subheading intro,</h4>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores a eos voluptatibus, fugiat alias ipsum repudiandae.</p>
+                </div>
+                <div id="filler_image" class="mx-auto d-block text-center py-5">
+                    <img src="/SinglePageTheme/images/rain6.jpg" alt="rain" class="rounded-circle img-thumbnail" style="max-width: 300px; max-height: 300px;">
+                </div>
+                <div class="text-end text-white ps-5 pe-2 ms-5 mb-4">
+                    <h4 class="fw-bolder">Subheading intro,</h4>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores a eos voluptatibus, fugiat alias ipsum repudiandae.</p>
+                </div>
+            </div>           
+        </div> 
+    </div>
+
     <main>  
         <div id="container_row1_image_text" class="row row-col-1 row-cols-lg-2">
-            <div id="col1_image_text" class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2 bg-dark-subtle p-3">
+            <div class="container-fluid">
+                <div id="col1_image_text" class="row row-cols-1 row-cols-md-2 bg-dark-subtle p-3">
                     <div class="col p-2 text-center text-black-50 _show_text">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quas alias adipisci beatae accusamus saepe culpa doloribus quia, repellendus neque? Est sit molestias rem optio repellat necessitatibus distinctio recusandae beatae.</p>
                     </div>
@@ -91,8 +124,8 @@
                     </div>
                 </div>
             </div>        
-            <div id="col2_image_text" class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2 bg-light p-3">
+            <div class="container-fluid">
+                <div id="col2_image_text" class="row row-cols-1 row-cols-md-2 bg-warning-subtle p-3">
                 
                     <div class="col p-2 text-center text-black-50">
                         <img src="/SinglePageTheme/images/truck.png" class="img-fluid _image_resize rounded shadow-sm" alt="car outline">
@@ -103,9 +136,9 @@
                 </div>
             </div>
         </div>
-        <div id="container_row2_image_text" class="row row-col-1 row-cols-lg-2">
-            <div id="col3_image_text" class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2 bg-dark-subtle p-3">
+        <div class="row row-col-1 row-cols-lg-2">
+            <div class="container-fluid">
+                <div id="col3_image_text" class="row row-cols-1 row-cols-md-2 bg-dark-subtle p-3">
                     <div class="col p-2 text-center text-black-50 _show_text">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quas alias adipisci beatae accusamus saepe culpa doloribus quia, repellendus neque? Est sit molestias rem optio repellat necessitatibus distinctio recusandae beatae.</p>
                     </div>
@@ -114,9 +147,8 @@
                     </div>
                 </div>
             </div>
-            <div id="container_image_text4" class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2 bg-light p-3">
-                
+            <div class="container-fluid">
+                <div id="col4_image_text" class="row row-cols-1 row-cols-md-2 bg-warning-subtle p-3">      
                     <div class="col p-2 text-center">
                         <img src="/SinglePageTheme/images/docking.png" class="img-fluid _image_resize rounded shadow-sm" alt="car outline">
                     </div>
@@ -128,27 +160,31 @@
         </div>
     </main>
 
-    <div id="icons" class="container-fluid">
+    <div id="icons" class="container-fluid bg-white">
         <div class="row row-cols-1 row-cols-md-3 p-sm-5">
-            <div class="col text-center bg-body-tertiary my-4 py-4  border border-success-subtle">
+            <div id="icons_container1" class="col text-center bg-body-tertiary my-4 py-4  border border-success-subtle">
                 <a href="#">
                     <img src="/SinglePageTheme/images/logo1.svg" class="img-fluid rounded-circle" alt="logo1" width="100px" height="100px">
                 </a>
                 <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore eum praesentium! </p>
             </div>
-            <div class="col text-center bg-body-secondary my-4 py-4">
+            <div id="icons_container2" class="col text-center bg-body-secondary my-4 py-4">
                 <a href="#">
                     <img src="/SinglePageTheme/images/logo2.png" class="img-fluid rounded-circle" alt="logo2" width="100px" height="100px">
                 </a>
                 <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore eum praesentium! Vitae quo adipisci provident nam iste repudiandae dolor consequuntur in eos? Dolores, aspernatur similique? Quasi aliquam ut esse?</p>
             </div>
-            <div class="col text-center bg-body-tertiary my-4 py-4 border border-success-subtle">
+            <div id="icons_container3" class="col text-center bg-body-tertiary my-4 py-4 border border-success-subtle">
                 <a href="#">
                     <img src="/SinglePageTheme/images/Tom.gif" class="img-fluid rounded-circle" alt="logo3" width="100px" height="100px">
                 </a>
                 <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore eum praesentium! Vitae quo adipisci provident nam iste repudiandae dolor.</p>
             </div>
         </div>
+    </div>
+
+    <div class="container bg-success-subtle">
+        <p>charging</p>
     </div>
 
     <footer class="container-fluid text-bg-dark p-3">    
