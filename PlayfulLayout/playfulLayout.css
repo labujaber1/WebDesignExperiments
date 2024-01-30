@@ -1,0 +1,211 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+   /*background-image: linear-gradient( aquamarine , white, white, white, white);*/
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+/*------------------------------main page----------------------------------*/
+
+.space {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient( aquamarine, white);   
+}
+
+/*title of page1 */
+.title { 
+    max-width: 1000px;
+    min-height: 100px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation-name: titlefont;
+    animation-duration: 6s;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+@keyframes titlefont {
+    from {color: white;}
+    to {color: black;}
+    
+}
+@keyframes font {
+    from {color: white;}
+    to {color: black;}
+} 
+
+
+/*short introduction statement of me*/
+.aspirations {
+    background-color: white;
+    max-width: 1000px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top:60px;
+    padding: 5px;
+    text-align: center;
+    animation-name: font;
+    animation-duration: 6s;
+    border-radius: 50%;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*skills? additional courses such as ms certified, gmetrix quals, w3school certs, wipe arse cert,*/
+/*box containing badges of achievement?, as writing this it is sounding shit and showy*/
+.skills1 {
+    padding: 5px;
+    max-width: 1000px;
+    min-height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 40px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25); 
+}
+
+.skills2 {  
+    padding: 5px;
+    max-width: 1000px;
+    min-height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.badge1 {  
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    align-items: center;
+    background-image: radial-gradient( #d6c8d8, rgb(197, 157, 219), white);
+    transition: transform 2s;
+}
+
+/*container to help center a link in the flying saucer sweet*/
+.textcircle {
+    width:50%;
+    align-items: center;
+    text-align: center;
+    /*background-color: aquamarine;*/
+    margin: 23px 11px;
+    text-decoration-line: underline;
+    color: #d6c8d8;
+}
+.badge2 {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    float: right;
+    padding: 10px;
+    background-image: radial-gradient(white, silver, white);
+    transition: transform 2s;
+}
+
+
+.badge1:hover {
+    transform: translateX(-200px);
+}
+
+.badge2:hover {
+    transform: translateY(-140px);
+}
+
+
+/*contains links to page2 for further reading of work and education*/
+.timeline {
+    max-width: 1000px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    margin-top: 40px;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 24px 18px 0 rgba(245, 163, 163, 0.35);
+    background-image: linear-gradient(to right, white 80%, aquamarine);
+}
+
+
+/*timeline links styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    list-style-type: none;
+    float: left;
+  }
+  
+  li a {
+    list-style-type: none;
+    font-size: 20px;
+    display: block;
+    color: rgb(8, 35, 155);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-bottom:10px;
+    transition: transform 1s;
+  }
+  
+  /*link changes colour when curser hovers over it*/
+  li a:hover {
+    /*background-color: rgba(245, 163, 163, 0.35);*/
+    box-shadow: 2px 14px 18px 0 rgba(245, 163, 163, 0.35);
+    transform: scale(1.05,1.05);
+}
+  
+img {
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    margin-right: 20px;
+    border-radius: 45%;
+    transition: all 3s;
+}
+
+img:hover {
+    /*transform: rotate(350deg) scale(0.7) translate(-30px, 10px);*/
+    /*transform: rotate(350deg);
+    transform: scale(0.5);
+    transform: translate(-30px, 10px);*/
+    transform: rotate(-380deg) scale(0.8) translate( -25px, 80px);
+    filter: drop-shadow(8px 8px 10px green)
+}
+
+.footer {
+    padding: 5px;
+    max-width: 1000px;
+    min-height: 250px;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.end {
+    max-width: 1000px;
+    min-height: 100px;
+    margin-top:40px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 24px 18px 0 rgba(245, 163, 163, 0.35),2px 10px 18px 0 rgba(0, 0, 0, 0.25);
+}
+

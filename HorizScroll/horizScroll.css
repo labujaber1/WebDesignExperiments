@@ -1,0 +1,264 @@
+/*css template for template_html.html*/
+
+body {
+    font-family:sans-serif;
+    font-size: 1rem; /*can also use 20px for example*/
+    text-align: justify;
+    color:white;
+    
+    
+}
+/*global start with '*' */
+* {
+    box-sizing: border-box;
+  }
+
+  
+  /*contains horizontal wrapper (everything)*/
+  .hor-outer-wrapper {
+    width: 100dvh;
+    height: 100dvw;
+    
+    transform: rotate(-90deg) translateX(-100dvh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    /*hide scroll bar as shown at top*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+/*hide scroll bar as shown at top*/
+::-webkit-scrollbar {
+  display:none;
+}
+  
+/*contains all classes*/
+.hor-wrapper {
+    display:flex;
+    flex-direction: row;
+    width: 400dvw;
+    transform: rotate(90deg) translateY(-100dvh);
+    transform-origin: top left;
+}
+/*class*/
+.hor-header {
+    width: 100dvw;
+    height:100dvh;
+    display: block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    border: solid;
+    border-color: cyan;
+}
+.hor-nav {
+    border-style: solid;
+    border-color: crimson;
+    margin: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+li {
+    text-align: center;
+    flex: 3;
+}
+.user {
+    flex:1;
+    
+}
+a {
+    display:inline-block;
+    width:fit-content;
+    color:coral;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+
+}
+li a:hover:not(.active) {
+    background-color: grey;
+    color:white;
+}
+
+.hor-textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+}
+.hor-imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid cyan;
+}
+img {
+    width: 100%;
+    margin:auto;
+    
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*animation image*/
+#img2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(250, 115, 52, 0.995);
+    animation: myMove1 5s infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+    animation-timing-function: ease;
+}
+#img2:hover {
+    animation: myMove2 2s infinite;
+    
+}
+@keyframes myMove1 {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 400px;
+    }
+}
+@keyframes myMove2 {
+    from {
+        top: 400px;
+    }
+    to {
+        top: 500px;
+    }
+}
+  
+/*class*/
+.hor-main {
+    width: 100dvw;
+    height: 100dvh;
+    display:flex;
+    flex-wrap: wrap;
+    border: solid;
+    border-color: cyan;
+}
+    
+.hor-container {
+    width: 100dvw;
+    height: 100dvh;
+    border: solid;
+    border-color: cyan;
+}
+    
+    /*image expandable with translucent text*/
+    .image-container {
+        background-image: url("/HorizScroll/images/flower.jpg");
+        background-size: cover;
+        position: relative;
+        width: 93dvw;
+        /*height:100dvh;*/
+        height: 250px;
+        box-shadow: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin:1rem;
+    }
+      .text {
+        background-color: white;
+        color: black;
+        font-size: 10dvw; 
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+        width: 55%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+      }
+
+.hor-corner {
+    width: 100dvw;
+    height: 100dvh;
+    border: solid;
+    border-color: cyan;
+}
+/*contains vertical wrapper (everything)*/
+.vert-outer-wrapper {
+    
+    width: 100dvw;
+    height: 350dvh;
+    
+   /* transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: bottom left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;*/
+    /*hide scroll bar as shown at top*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+/*hide scroll bar as shown at top*/
+::-webkit-scrollbar {
+  display:none;
+}
+  
+/*contains all classes*/
+.vert-wrapper {
+    
+    border: solid;
+    border-color: yellow;
+    width: 100dvw;
+    height: 350dvh;
+    display:block;
+    flex-direction:column;
+    /*transform: rotate(90deg) translateY(-100dvh);
+    transform-origin: bottom left;*/
+}
+.corner-filler1 {
+    width: 100dvw;
+    height: 100dvh;
+    border: solid;
+    border-color: cyan;
+}
+.vert-filler2 {
+    width: 100dvw;
+    height: 100dvh;
+    border: solid;
+    border-color: blue;
+}
+
+.vert-filler3 {
+    width: 100dvw;
+    height: 100dvh;
+    border: solid;
+    border-color: blue;
+}
+
+
+/*class*/
+.vert-footer {
+    
+    width: 100dvw;
+    height: 50dvh;
+    border: solid;
+    border-color: blue;
+}
+
+
+/*nav links size for small tablet device onwards*/
+@media all and (max-width: 1000px) { 
+    .hor-nav ul { flex-wrap: wrap; }
+    .hor-nav li { flex: 1 1 50%; } 
+    .hor-nav .user { flex: 1 1 33.33%; } 
+    }
+/*nav links size for mobile phones*/
+@media all and (max-width: 500px) { 
+    .hor-nav li{ flex-basis: 100%; } 
+    .a {padding: 15px;}
+    }
