@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="/DisplayImages/style.css">  
 </head>
 <body>
-    <div class="container-fluid bg-light">
+    <!-- full page container for everything -->
+    <div class="container-fluid bg-dark-subtle">
         <!--nav-->
         <nav class="navbar sticky-top navbar-dark bg-dark text-white ">
             <div class="container-fluid">
@@ -25,11 +26,13 @@
                     <a class="nav-item nav-link" href="/index.html">Back main home</a>
                     <a class="nav-item nav-link" href="/index.html">Back main home</a>
                 </ul>
-                </div>
+                
             </div>
         </nav>
         <hr>
+
         <!--first option-->
+
         <div class="wrapper background-light">
             <br>
             <div class="col1">   
@@ -74,7 +77,7 @@
         </div>
         <hr>
 
-        <!--second option-->
+        <!--second option no images-->
         
         <div class="wrapper">
             <div class="col1">
@@ -110,6 +113,7 @@
         <hr>
 
         <!--third option-->
+        <!-- using bootstrap 5 to replicate GalleryTest.html -->
         <div class="container-fluid  text-bg-dark p-2 ">
             
             <div class="container-fluid shadow d-flex p-3 bg-dark-subtle text-black">               
@@ -133,10 +137,80 @@
 
 
         <hr>
-
-
-
     </div>
+
+        <!-- forth option -->
+        <!-- using Kevin Powell - new approach to container and wrapper classes (inspired by others)-->
+        <!-- will have to end previous full page container to illustrate -->
+    <div class="flow content-grid">
+        <h3>Not using wrappers or containers but a grid</h3>
+        <p class="breakout">Uses css grid with line labels to structure the page and provide page width options
+            as class names. Can use flow content-grid classes in a plain div or main div but does
+            need something. These class names are added to <em>headers</em> and <em>paragraph</em> classes 
+            directly rather than creating a separate div. This paragraph is set to breakout column label.
+        </p>
+        <p>Using Kevin Powell - new approach to container and wrapper classes. This paragraph is set to content column label</p>
+        <p>Content line label = middle column (1fr),</p>
+        <p>breakout line label = content + next column (+100px),</p>
+        <p>full-width line label = spans all columns (+100px).</p>
+
+        <section class="full-width text-bg-blue">
+            <p>Added a nested grid of images within the column. This is set to a full width column label.
+                column in a section div.
+            </p>
+        </section>
+        
+
+        <img src="/DisplayImages/images/Banner-lapimage.png" alt="Banner lapimage" class="flow full-width">
+        
+
+        <h1>Header (content)</h1>
+        <p>(content) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+            similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+        <p>(content) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+            similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+    
+    </div>
+    <div class="multi-content-grid">
+        <p class="flow multi-grid-left">The following images are set in a nested grid. This text is set on the left side.</p>
+        <p class="flow multi-grid-mid">- in the middle 20px-</p>
+        <p class="flow multi-grid-right">Whereas this is set to the right</p>
+        
+        <img src="/DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <img src="/DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-right ">
+        <img src="/DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <p class="flow multi-grid-right">This is a text filler amongst images.</p>    
+        <img src="/DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <img src="/DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-right ">
+    </div>
+    <div class="flow content-grid">
+        <section class="full-width text-bg-blue">
+            <p>(full-width) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+                similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </section>
+
+        <h1>Header 2 (content)</h1>
+        <p class="breakout">(breakout) Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+        similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+
+        <img src="/DisplayImages/images/linkedin-banner2.jpg" alt="Banner 2" class="flow full-width">
+    </div>
+    
+    <hr>
+    
+    <!-- fifth option -->
+
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="text/javascript" language="javascript" src="/DisplayImages/javascript.js"></script>
