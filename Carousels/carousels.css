@@ -1,0 +1,138 @@
+/* Carousels */
+
+/* first option */
+/* https://www.divinectorweb.com/2022/01/bootstrap-5-carousel-with-thumbnails.html */
+#opt1 .carousel-item  {
+	height: 100dvh;
+	min-height: 350px;
+}
+.bg-1 {
+	background-image: url(/Carousels/images/beach/seaAerial3.jpg);
+}
+.bg-2 {
+	background-image: url(/Carousels/images/desert/desert3.jpg);
+}
+.bg-3 {
+	background-image: url(/Carousels/images/rain/rain3.jpg);
+}
+.bg-1, .bg-2, .bg-3 {
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 85px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: 'Moon Dance', cursive;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: fit-content;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+.carousel-indicators {
+	bottom: 85px;
+    
+}
+.carousel-indicators img{
+	border-radius: 0%;
+	max-width: 100%;
+	height: fit-content;
+    display: block;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    
+}
+.carousel-indicators button {
+	width: 100px !important;
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 350px;
+	}
+	.carousel-caption h5 {
+		font-size: 65px;
+	}
+	.carousel-caption p {
+		font-size: 18px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption p {
+		font-size: 12px;
+		width: 100%;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+}
+
+
+/* Second option */
+#opt2 .carousel-item {
+	height: auto;
+	min-height: 350px;
+}
+
+.carousel-background {
+    background: linear-gradient(
+        
+        135deg,
+        rgb(5, 5, 143)20%,
+        rgb(222, 6, 6)50%,
+        rgb(255,255,255)80%
+    );
+}
+

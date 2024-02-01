@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="author" content="">
+    <title>Display images</title>
+    <meta name="author" content="Display Images">
     <meta 
         name="description"
         content="Methods to display images including gallery options">
@@ -14,30 +14,37 @@
     <!-- Links for bootstrap css (js at bottom of page)-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/DisplayImages/style.css">  
+    <link rel="stylesheet" type="text/css" href="/DisplayImages/displayImages.css">  
 </head>
 <body>
+    
+    <!--nav-->
+    <nav class="navbar sticky-top navbar-dark bg-dark-subtle text-white ">
+        <ul class="nav">
+            <a class="nav-link" href="/index.html">Back main home</a>
+            <a class="nav-link" href="#gallery1">Gallery 1</a>
+            <a class="nav-link" href="#gallery2">Gallery 2</a>
+            <a class="nav-link" href="#gallery3">Gallery 3</a>
+            <a class="nav-link" href="#gallery4">Gallery 4</a>
+            <a class="nav-link" href="#gallery5">Gallery 5</a>
+            
+        </ul>
+        
+    </nav>
+
+    <a id="gallery1"></a>
+    <hr>
+
     <!-- full page container for everything -->
     <div class="container-fluid bg-dark-subtle">
-        <!--nav-->
-        <nav class="navbar sticky-top navbar-dark bg-dark text-white ">
-            <div class="container-fluid">
-                <ul class="nav-item ">
-                    <a class="nav-item nav-link" href="/index.html">Back main home</a>
-                    <a class="nav-item nav-link" href="/index.html">Back main home</a>
-                </ul>
-                
-            </div>
-        </nav>
-        <hr>
 
         <!--first option-->
-
         <div class="wrapper background-light">
             <br>
+            
             <div class="col1">   
                 <div class="subtitle">
-                    <p id="p6"> Gallery option 1</p>
+                    <p id="p6"> Gallery - option 1</p>
                 </div>
                 <div class="gallery-container">          
                     <div class="slide">
@@ -75,6 +82,8 @@
                 </div>
             </div>
         </div>
+
+        <a id="gallery2"></a>
         <hr>
 
         <!--second option no images-->
@@ -84,7 +93,7 @@
                 <div class="docContainer">
                     <div class="card">   
                         <div class="card-title">
-                            <h1>PDF Documents</h1>
+                            <h1>PDF Documents - option 2</h1>
                         </div>
                         <div class="textBox">
                             <p>Displaying pdf documents and make available to download.</p>
@@ -110,40 +119,75 @@
                 </div>
             </div>
         </div>
-        <hr>
 
+        <a id="gallery3"></a>
+        <hr>
+        <br>
         <!--third option-->
-        <!-- using bootstrap 5 to replicate GalleryTest.html -->
-        <div class="container-fluid  text-bg-dark p-2 ">
-            
-            <div class="container-fluid shadow d-flex p-3 bg-dark-subtle text-black">               
-                <div class="container shadow p-4 text-bg-light">                   
-                    <div class="container shadow p-4 bg-light-subtle">
-                        <div class="container shadow p-4 bg-white">
+        <!-- using bootstrap 5 based on GalleryTest.html effect -->
+       
+        <div class="container-fluid text-bg-dark p-2 mt-3">
+            <h3 class="text-center">Gallery - option 3</h3>
+            <div class="container-fluid d-flex flex-column flex-sm-row align-content-center justify-content-center p-1 bg-dark-subtle text-black">               
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
                             <img src="/DisplayImages/images/processor.jpg">
                         </div>
                     </div>
                 </div>
-                <div class="container shadow p-4">
-                    <div class="container shadow p-4">
-                        <div class="container shadow p-4">
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="/DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
                             <img src="/DisplayImages/images/processor.jpg">
                         </div>
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="container-fluid d-flex flex-column flex-sm-row align-content-center justify-content-center p-1 bg-dark-subtle text-black">
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="/DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
+                            <img src="/DisplayImages/images/processor.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="/DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
 
-
+        <a id="gallery4"></a>
         <hr>
     </div>
 
-        <!-- forth option -->
-        <!-- using Kevin Powell - new approach to container and wrapper classes (inspired by others)-->
-        <!-- will have to end previous full page container to illustrate -->
-    <div class="flow content-grid">
-        <h3>Not using wrappers or containers but a grid</h3>
+    <!-- forth option -->
+    <!-- using Kevin Powell - new approach to container and wrapper classes (inspired by others)-->
+    <!-- will have to end previous full page container to illustrate -->
+    
+    <div class="flow content-grid pt-3 mt-3">
+        <h3>Not using wrappers or containers but a grid - option 4</h3>
         <p class="breakout">Uses css grid with line labels to structure the page and provide page width options
             as class names. Can use flow content-grid classes in a plain div or main div but does
             need something. These class names are added to <em>headers</em> and <em>paragraph</em> classes 
@@ -205,15 +249,17 @@
         <img src="/DisplayImages/images/linkedin-banner2.jpg" alt="Banner 2" class="flow full-width">
     </div>
     
+    <a id="gallery5"></a>
     <hr>
     
     <!-- fifth option -->
-
+    <h1>Fifth option </h1>
+    
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script type="text/javascript" language="javascript" src="/DisplayImages/javascript.js"></script>
+    <script type="text/javascript" language="javascript" src="/DisplayImages/displayImages.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,48 @@
+
+
+
+#icons img {
+    transition: all ease-in 500ms ;
+}
+
+#icons img:hover {
+    
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+._show_text {
+    transition: all ease-in 200ms;
+}
+._show_text p:hover {
+    color: #000;
+}
+
+._image_resize {
+    max-width: 50%;
+    max-height: auto;
+}
+
+._container_colour_split {
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 43, 136);
+    background-image: linear-gradient(
+        to bottom right,
+        #ffff 50%,
+        #000 50%,
+        #000 100%
+    );
+}
+
+#filler_image {
+    transition: all ease-in 500ms;
+}
+    #filler_image img:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: scaleY(0.99);
+    }
+
+
