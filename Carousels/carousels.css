@@ -7,15 +7,19 @@
 	min-height: 350px;
 }
 .bg-1 {
-	background-image: url(/Carousels/images/beach/seaAerial3.jpg);
+	background-image: url(/Carousels/images/carousel1/seaAerial.jpg);
 }
 .bg-2 {
-	background-image: url(/Carousels/images/desert/desert3.jpg);
+	background-image: url(/Carousels/images/carousel1/seaAerial2.jpg);
 }
 .bg-3 {
-	background-image: url(/Carousels/images/rain/rain3.jpg);
+	background-image: url(/Carousels/images/carousel1/seaAerial3.jpg);
 }
-.bg-1, .bg-2, .bg-3 {
+.bg-4 {
+	background-image: url(/Carousels/images/carousel1/seaAerial4.jpg);
+}
+
+.bg-1, .bg-2, .bg-3, .bg-4 {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
