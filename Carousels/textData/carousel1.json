@@ -1,14 +1,50 @@
 [
 {
-    "title": "",
-    "subtitle": "",
-    "description": "",
-    "moreData": "",
+    "title": "Open beach on bottom",
+    "subtitle": "Portrait",
+    "description": "Paradise beach with waves coming from the bottom",
+    "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
     "fileData": {
-        "path": "",
-        "name": "",
-        "type": "",
-        "size": ""
+        "path": "/Carousels/images/carousel1/seaArial.jpg",
+        "name": "seaArial",
+        "type": "jpg",
+        "size": "911kb"
+    }
+},
+{
+    "title": "Open beach on left",
+    "subtitle": "Landscape",
+    "description": "Paradise beach with waves coming from the bottom",
+    "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+    "fileData": {
+        "path": "/Carousels/images/carousel1/seaArial2.jpg",
+        "name": "seaArial2",
+        "type": "jpg",
+        "size": "911kb"
+    }
+},
+{
+    "title": "Open beach at top",
+    "subtitle": "Portrait",
+    "description": "Paradise beach with waves coming from the bottom",
+    "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+    "fileData": {
+        "path": "/Carousels/images/carousel1/seaArial3.jpg",
+        "name": "seaArial3",
+        "type": "jpg",
+        "size": "911kb"
+    }
+},
+{
+    "title": "Open beach on right",
+    "subtitle": "Landscape",
+    "description": "Paradise beach with waves coming from the bottom",
+    "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+    "fileData": {
+        "path": "/Carousels/images/carousel1/seaArial4.jpg",
+        "name": "seaArial4",
+        "type": "jpg",
+        "size": "911kb"
     }
 }
 

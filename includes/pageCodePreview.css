@@ -1,0 +1,7 @@
+/* pageCodePreview */
+
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
+}

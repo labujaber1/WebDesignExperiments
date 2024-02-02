@@ -1,3 +1,5 @@
+/* ImageInPC */
+
 :root {
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --char-multiplier: 0.29dvw;
@@ -20,6 +22,12 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5;
     background-color: var(--background-main);
+}
+
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
 }
 
 img {

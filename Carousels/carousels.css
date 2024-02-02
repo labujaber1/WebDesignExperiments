@@ -1,5 +1,11 @@
 /* Carousels */
 
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
+}
+
 /* first option */
 /* https://www.divinectorweb.com/2022/01/bootstrap-5-carousel-with-thumbnails.html */
 #opt1 .carousel-item  {

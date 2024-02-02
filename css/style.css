@@ -9,6 +9,12 @@
     box-shadow: var(--inset_boxShadow);
 }
 
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
+}
+
 .btn {
     color: black;
     width: 100px;
@@ -147,4 +153,37 @@
     .button3::after {
         border-color: white;
     }
-        
+
+/* component 4 */
+.box_lift {
+    
+    width: 300px;
+    height: 100px;
+}
+
+.shadow_lift {
+    position: relative;
+    margin: 1.5rem 0 2.5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .shadow_lift::before,
+  .shadow_lift::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 48%;
+    top: 80%;
+    bottom: 0.5rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(119, 119, 119, 0.6);
+  }
+  .shadow_lift::before{
+    left: 0.5rem;
+    transform: rotate(-10deg);
+  }
+  .shadow_lift::after{
+    right: 0.5rem;
+    transform: rotate(10deg);
+  }
+
+
+

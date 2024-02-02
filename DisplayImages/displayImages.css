@@ -9,7 +9,13 @@
     --inner-shadow: inset 0 0 25px 1px rgba(136, 136, 248, 0.5);
     --inner-shadow-light: inset 0 0 10px 1px #ffffff;
     --inner-shadow-dark: inset 0 0 15px 1px #000000;
-    
+
+}
+
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
 }
 
 /* Option 1 */
@@ -37,6 +43,7 @@ img {
     align-items: center;
     padding: 1rem;
 }
+
 .background-light {
     background-color: var(--background-light);
 }
@@ -49,7 +56,7 @@ img {
     flex-direction: column;
     text-align: center;
     align-content: center;
-    padding: 0 2dvw ; 
+    padding: 0 2dvw;
 }
 
 
@@ -66,37 +73,43 @@ img {
     box-sizing: border-box;
     height: fit-content;
 }
-    /* Gallery image behaviour */ 
-    .slide {
-        flex: 1;
-        overflow: hidden;
-        transition: 0.5s;
-        margin: 0 2%;
-        line-height: 0;   
-    }
-    
-    .slide > img {
-        width: 200%;
-        height: calc(100% - 10vh);
-        object-fit: cover; 
-        transition: 0.5s;
-        border-color: white;
-        border-style: solid;
-        border-width: 5px;
-    }
-    .slide > span {
-        font-size: calc(1rem + var(--char-multiplier));
-        display: block;
-        text-align: center;
-        height: 40px;
-        padding-top: 20px;  
-    }
-    .slide:hover { flex: 1 1 50%; }
-    .slide:hover > img {
-        width: 100%;
-        height: 100%;
-    }
-      
+
+/* Gallery image behaviour */
+.slide {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    line-height: 0;
+}
+
+.slide>img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: 0.5s;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.slide>span {
+    font-size: calc(1rem + var(--char-multiplier));
+    display: block;
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.slide:hover {
+    flex: 1 1 50%;
+}
+
+.slide:hover>img {
+    width: 100%;
+    height: 100%;
+}
+
 .colSpacer {
     width: 100%;
     min-height: 6dvh;
@@ -107,15 +120,16 @@ img {
     border-radius: 20px;
 }
 
-    .colSpacer.line {
-        border: 5px solid;
-        border-color: gold;
-    }
-    .colSpacer.linearGradient {    
-        border: 3px solid;
-        border-image-source: linear-gradient(145deg, gold,red,gold);
-        border-image-slice: 1;
-    }
+.colSpacer.line {
+    border: 5px solid;
+    border-color: gold;
+}
+
+.colSpacer.linearGradient {
+    border: 3px solid;
+    border-image-source: linear-gradient(145deg, gold, red, gold);
+    border-image-slice: 1;
+}
 
 /* option 2 */
 
@@ -130,8 +144,9 @@ img {
     border-radius: 7px;
     box-shadow: var(--box-shadow);
 }
+
 .docFrame {
-    background-color:rgb(233, 233, 247);
+    background-color: rgb(233, 233, 247);
     max-width: 800px;
     margin: 20px 0;
     box-shadow: var(--box-shadow);
@@ -140,25 +155,28 @@ img {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    transition: all 1.5s ease-in-out;  
+    transition: all 1.5s ease-in-out;
 }
-    .docFrame a {
-        color: rgb(22, 11, 235);
-    }
-    .docFrame a:hover {
-        color: rgb(198, 147, 52);     
-    }  
-    
 
-#PDFView1, #PDFView2 {
+.docFrame a {
+    color: rgb(22, 11, 235);
+}
+
+.docFrame a:hover {
+    color: rgb(198, 147, 52);
+}
+
+
+#PDFView1,
+#PDFView2 {
     width: 100%;
     height: 600px;
     padding: 2px;
     display: none;
     align-items: center;
-}    
+}
 
-.itemRowSpace { 
+.itemRowSpace {
     margin: 0;
     padding: 0;
     display: flex;
@@ -196,13 +214,20 @@ img {
 
 
 
-@media (width >= 1000px) { 
-    .wrapper {padding: 2rem 10% 2rem 10%; }
+@media (width >=1000px) {
+    .wrapper {
+        padding: 2rem 10% 2rem 10%;
+    }
+}
+
+@media (width < 600px) {
+    .col1 {
+        padding: 0;
     }
 
-@media (width < 600px) { 
-    .col1 { padding: 0; }
-    .gallery-container { flex-direction: column; }
+    .gallery-container {
+        flex-direction: column;
+    }
 }
 
 /* third option */
@@ -210,9 +235,11 @@ img {
 .inner_shadow {
     box-shadow: var(--inner-shadow);
 }
+
 .inner_shadow_light {
     box-shadow: var(--inner-shadow-light);
 }
+
 .inner_shadow_dark {
     box-shadow: var(--inner-shadow-dark);
 }
@@ -221,32 +248,33 @@ img {
 
 .flow {
     margin: 1rem auto;
-    
+
 }
+
 .content-grid {
     display: grid;
     grid-template-columns: [full-width-start] 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px [full-width-end];
 }
 
-    .content-grid > :not(.breakout, .full-width),
-    .full-width > :not(.breakout, .full-width) {
-        grid-column: content-start / content-end;
-    }
+.content-grid> :not(.breakout, .full-width),
+.full-width> :not(.breakout, .full-width) {
+    grid-column: content-start / content-end;
+}
 
-    .content-grid > .breakout {
-        grid-column: breakout-start / breakout-end;
-    }
+.content-grid>.breakout {
+    grid-column: breakout-start / breakout-end;
+}
 
-    .content-grid > .full-width {
-        grid-column: full-width-start / full-width-end;
+.content-grid>.full-width {
+    grid-column: full-width-start / full-width-end;
 
-        display: grid;
-        grid-template-columns: initial;   
-    }
+    display: grid;
+    grid-template-columns: initial;
+}
 
-    .full-width p {
-        padding: 0 1rem;
-    }
+.full-width p {
+    padding: 0 1rem;
+}
 
 .multi-content-grid {
     display: grid;
@@ -254,17 +282,17 @@ img {
     padding: 0 0.5rem;
 }
 
-    .multi-content-grid > .multi-mid {
-        grid-column: multi-mid;
-    }
+.multi-content-grid>.multi-mid {
+    grid-column: multi-mid;
+}
 
-    .multi-content-grid > .multi-grid-left {
-        grid-column: multi-left;
-    }
+.multi-content-grid>.multi-grid-left {
+    grid-column: multi-left;
+}
 
-    .multi-content-grid > .multi-grid-right {
-        grid-column: multi-right;
-    }
+.multi-content-grid>.multi-grid-right {
+    grid-column: multi-right;
+}
 
 img.full-width {
     width: 100%;
@@ -279,15 +307,98 @@ img.full-width {
     padding: 1rem 0;
 }
 
-@media (width < 700px) { 
-    .content-grid { 
-        grid-template-columns: 
-        [full-width-start] 20px [breakout-start] 20px 
-        [content-start] 1fr [content-end] 
-        20px [breakout-end] 20px [full-width-end]; 
+@media (width < 700px) {
+    .content-grid {
+        grid-template-columns:
+            [full-width-start] 20px [breakout-start] 20px [content-start] 1fr [content-end] 20px [breakout-end] 20px [full-width-end];
     }
+
     .multi-content-grid {
-        display: block;   
+        display: block;
     }
 }
 
+/* fifth option */
+
+.fix_height {
+    height: 400px;
+
+}
+
+.card_plus {
+    width: 100px;
+    background-color: #ffffff;
+    cursor: pointer;
+    background-size: cover;
+    transition: 0.6s ease-in-out;
+    /*cubic-bezier(0.28, -0.03, 0, 0.99)*/
+    display: flex;
+    align-items: flex-end;
+    margin: 0 10px ;
+    overflow: hidden;
+}
+
+.card_plus .row .icon_plus {
+    width: 50px;
+   
+}
+
+.card_plus .row .icon_plus .description {
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    /*change to 0*/
+    transform: translateY(30px);
+    transition: all 0.3s ease;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card_plus[for="cl1"] {
+    background-image: url(/DisplayImages//images/expanding_gallery/legosmoker.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_plus[for="cl2"] {
+    background-image: url(/DisplayImages//images/expanding_gallery/Rabbit.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_plus[for="cl3"] {
+    background-image: url(/DisplayImages//images/expanding_gallery/red_dead_arthur.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_plus[for="cl4"] {
+    background-image: url(/DisplayImages//images/expanding_gallery/Torture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (width < 700px) {
+    #outer_wrap {
+        
+    }
+
+    #inner_cont {
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+
+}

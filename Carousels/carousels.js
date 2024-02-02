@@ -1,12 +1,40 @@
+// Carousels
+/* insert pdf document cv */
+window.onload = function() {
+  if(PDFObject.supportsPDFs){
+      console.log("Your browser supports PDFs, now embedding files.");
+      const option = {
+          height: "30rem",
+          width: "100%"
+      }
+      PDFObject.embed("/Carousels/carousels.css","#PDFView1", option);
+      PDFObject.embed("/Carousels/carousels.js","#PDFView2", option);
+      PDFObject.embed("/pages/Carousels.html","#PDFView3", option);
+  }
+  else {
+      alert("Your browser does not support PDFs, cannot insert files.");
+  }
+}
+/* low priority data - hide/show employment history if required */
+function expand(pdfNum) {
+  var pdf = document.getElementById("PDFView" + pdfNum);
+  if (pdf.style.display === "flex" ){
+      pdf.style.display = "none";
+  }
+  else {
+      pdf.style.display = "flex";
+  }
+}
+
+
 /* search image folder and save files to json file */
 /* Add text data such as heading, description in json file for each image file */
-/* Print each json object to carousel */
-
 
 
 // Function to get file names and paths for images in a folder and save to a JSON file
-const getImageFiles = (folderPath,jsonFile) => {
+/*const getImageFiles = (folderPath,jsonFile) => {
     
+    // create module file to get file list return array
     // Read the contents of the specified folder
     const fs = require("fs");
     const files = fs.readdirSync(folderPath);
@@ -53,4 +81,8 @@ const getImageFiles = (folderPath,jsonFile) => {
 const folderPath = "/Carousels/images/carousel1/";
 const jsonFile = "carousel1.json";
 // Example usage
-getImageFiles(folderPath,jsonFile);
+getImageFiles(folderPath,jsonFile);*/
+
+
+/* Print each json object to carousel */
+

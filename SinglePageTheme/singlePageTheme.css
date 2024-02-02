@@ -1,5 +1,10 @@
+/* SinglePageTheme */
 
-
+#PDFView1,
+#PDFView2,
+#PDFView3 {
+    display: none;
+}
 
 #icons img {
     transition: all ease-in 500ms ;

@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Desert dune",
+        "subtitle": "Portrait",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert1.jpg",
+            "name": "desert1",
+            "type": "jpg",
+            "size": "12mb"
+        }
+    },
+    {
+        "title": "Desert sand fall",
+        "subtitle": "Portrait",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert2.jpg",
+            "name": "desert2",
+            "type": "jpg",
+            "size": "9mb"
+        }
+    },
+    {
+        "title": "Night dune",
+        "subtitle": "Portrait",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert3.jpg",
+            "name": "desert3",
+            "type": "jpg",
+            "size": "4mb"
+        }
+    },
+    {
+        "title": "Rocky desert angel",
+        "subtitle": "Portrait",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert4.jpg",
+            "name": "desert4",
+            "type": "jpg",
+            "size": "3mb"
+        }
+    },
+    {
+        "title": "Distant desert rock",
+        "subtitle": "Landscape",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert5.jpg",
+            "name": "desert5",
+            "type": "jpg",
+            "size": "3mb"
+        }
+    },
+    {
+        "title": "Desert canyon",
+        "subtitle": "Landscape",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert6.jpg",
+            "name": "desert6",
+            "type": "jpg",
+            "size": "3mb"
+        }
+    },
+    {
+        "title": "Desert footprints",
+        "subtitle": "Landscape",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert7.jpg",
+            "name": "desert7",
+            "type": "jpg",
+            "size": "2mb"
+        }
+    },
+    {
+        "title": "Desert illusion",
+        "subtitle": "Portrait",
+        "description": "Paradise in a harsh reality",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel2/desert8.jpg",
+            "name": "desert8",
+            "type": "jpg",
+            "size": "2mb"
+        }
+    }
+    
+]

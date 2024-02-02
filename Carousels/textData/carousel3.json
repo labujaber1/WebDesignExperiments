@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Rain 1",
+        "subtitle": "Portrait",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain1.jpg",
+            "name": "rain1",
+            "type": "jpg",
+            "size": "3mb"
+        }
+    },
+    {
+        "title": "Rain 2",
+        "subtitle": "Landscape",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain2.jpg",
+            "name": "rain2",
+            "type": "jpg",
+            "size": "3mb"
+        }
+    },
+    {
+        "title": "Rain 3",
+        "subtitle": "Portrait",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain3.jpg",
+            "name": "rain3",
+            "type": "jpg",
+            "size": "2mb"
+        }
+    },
+    {
+        "title": "Rain 4",
+        "subtitle": "Landscape",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain4.jpg",
+            "name": "rain4",
+            "type": "jpg",
+            "size": "2mb"
+        }
+    },
+    {
+        "title": "Rain 5",
+        "subtitle": "Landscape",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain5.jpg",
+            "name": "rain5",
+            "type": "jpg",
+            "size": "1mb"
+        }
+    },
+    {
+        "title": "Rain 6",
+        "subtitle": "Landscape",
+        "description": "Rain through the looking glass",
+        "moreData": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque cum sapiente optio aliquid sequi placeat, vero minus voluptate tempore laborum quo, quasi, eaque quis accusantium cupiditate explicabo mollitia cumque! ",
+        "fileData": {
+            "path": "/Carousels/images/carousel3/rain6.jpg",
+            "name": "rain6",
+            "type": "jpg",
+            "size": "1mb"
+        }
+    },
+    
+    
+    
+    ]
