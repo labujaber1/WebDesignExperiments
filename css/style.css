@@ -186,4 +186,23 @@
   }
 
 
+.light_shadow {
+    box-shadow: 
+    0 4px 8px 0 rgba(2, 47, 96, 0.95), 
+    0 6px 20px 0 rgba(255, 255, 255, 0.99),
+    6px 0 20px 0 rgba(255, 255, 255, 0.99),
+    4px 0 8px 0 rgba(2, 47, 96, 0.95);
+}
 
+#footer_exp img {
+    transition: all 0.5s ease;
+}
+#footer_exp img:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 
+    0 1px 5px 0 rgba(2, 47, 96, 0.95), 
+    0 4px 12px 0 rgba(255, 255, 255, 0.99),
+    4px 0 12px 0 rgba(255, 255, 255, 0.99),
+    1px 0 5px 0 rgba(2, 47, 96, 0.95);
+}
