@@ -7,9 +7,9 @@ window.onload = function() {
           height: "30rem",
           width: "100%"
       }
-      PDFObject.embed("./Carousels/carousels.css","#PDFView1", option);
-      PDFObject.embed("./Carousels/carousels.js","#PDFView2", option);
-      PDFObject.embed("./pages/Carousels.html","#PDFView3", option);
+      PDFObject.embed("../Carousels/carousels.css","#PDFView1", option);
+      PDFObject.embed("../Carousels/carousels.js","#PDFView2", option);
+      PDFObject.embed("../pages/Carousels.html","#PDFView3", option);
   }
   else {
       alert("Your browser does not support PDFs, cannot insert files.");
@@ -78,7 +78,7 @@ function expand(pdfNum) {
     // Log a success message
     console.log("Image data saved to " + dataFile);
 };
-const folderPath = "./Carousels/images/carousel1/";
+const folderPath = "../Carousels/images/carousel1/";
 const jsonFile = "carousel1.json";
 // Example usage
 getImageFiles(folderPath,jsonFile);*/

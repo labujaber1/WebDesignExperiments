@@ -8,9 +8,9 @@ window.onload = function() {
             height: "30rem",
             width: "100%"
         }
-        PDFObject.embed("./HorizScroll/horizScroll.css","#PDFView1", option);
-        PDFObject.embed("./HorizScroll/horizScroll.js","#PDFView2", option);
-        PDFObject.embed("./pages/HorizScroll.html","#PDFView3", option);
+        PDFObject.embed("../HorizScroll/horizScroll.css","#PDFView1", option);
+        PDFObject.embed("../HorizScroll/horizScroll.js","#PDFView2", option);
+        PDFObject.embed("../pages/HorizScroll.html","#PDFView3", option);
     }
     else {
         alert("Your browser does not support PDFs, cannot insert files.");

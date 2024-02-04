@@ -367,25 +367,25 @@ input:checked + label .description {
 }
 
 .card_plus[for="cl1"] {
-    background-image: url(./DisplayImages//images/expanding_gallery/legosmoker.jpg);
+    background-image: url(../DisplayImages//images/expanding_gallery/legosmoker.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .card_plus[for="cl2"] {
-    background-image: url(./DisplayImages//images/expanding_gallery/Rabbit.jpg);
+    background-image: url(../DisplayImages//images/expanding_gallery/Rabbit.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .card_plus[for="cl3"] {
-    background-image: url(./DisplayImages//images/expanding_gallery/red_dead_arthur.jpg);
+    background-image: url(../DisplayImages//images/expanding_gallery/red_dead_arthur.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .card_plus[for="cl4"] {
-    background-image: url(./DisplayImages//images/expanding_gallery/Torture.jpg);
+    background-image: url(../DisplayImages//images/expanding_gallery/Torture.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

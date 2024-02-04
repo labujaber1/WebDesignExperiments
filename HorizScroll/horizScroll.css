@@ -162,7 +162,7 @@ img:hover {
     
     /*image expandable with translucent text*/
     .image-container {
-        background-image: url("./HorizScroll/images/flower.jpg");
+        background-image: url("../HorizScroll/images/flower.jpg");
         background-size: cover;
         position: relative;
         width: 93dvw;
