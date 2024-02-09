@@ -10,7 +10,7 @@ window.onload = function() {
         }
         PDFObject.embed("../PlayfulLayout/playfulLayout.css","#PDFView1", option);
         PDFObject.embed("../PlayfulLayout/playfulLayout.js","#PDFView2", option);
-        PDFObject.embed("../pages/PlayfulLayout.html","#PDFView3", option);
+        PDFObject.embed("../pages/PlayfulLayout.txt","#PDFView3", option);
     }
     else {
         alert("Your browser does not support PDFs, cannot insert files.");

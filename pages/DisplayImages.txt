@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display images</title>
+    <meta name="author" content="Display Images">
+    <meta 
+        name="description"
+        content="Methods to display images including gallery options">
+   
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for bootstrap css (js at bottom of page)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../DisplayImages/displayImages.css">  
+</head>
+<body>
+    
+    <!--nav-->
+    <nav class="navbar sticky-top navbar-dark bg-dark-subtle text-white ">
+        <ul class="nav">
+            <a class="nav-link" href="../index.html">Back main home</a>
+            <a class="nav-link" href="#gallery1">Gallery 1</a>
+            <a class="nav-link" href="#gallery2">Gallery 2</a>
+            <a class="nav-link" href="#gallery3">Gallery 3</a>
+            <a class="nav-link" href="#gallery4">Gallery 4</a>
+            <a class="nav-link" href="#gallery5">Gallery 5</a>
+            
+        </ul>
+        
+    </nav>
+
+    <a id="gallery1"></a>
+    <hr>
+
+    <!-- full page container for everything -->
+    <div class="container-fluid bg-dark-subtle">
+
+        <!--first option-->
+        <div class="wrapper background-light">
+            <br>
+            
+            <div class="col1">   
+                <div class="subtitle">
+                    <p id="p6"> Gallery - option 1</p>
+                </div>
+                <div class="gallery-container">          
+                    <div class="slide">
+                        <div><img src="../DisplayImages/images/LitRevResource1.jpg" alt="Image 1">                   
+                        </div>
+                        <span>Image 1</span>
+                    </div>
+                    <div class="slide">
+                        <div><img src="../DisplayImages/images/LitRevResource2.jpg" alt="Image 2">
+                        </div>
+                        <span>Image 2</span>
+                    </div>
+                </div>
+                <div class="gallery-container">  
+                    <div class="slide">
+                        <div><img src="../DisplayImages/images/LitRevResource3.jpg" alt="Image 3">              
+                        </div>
+                        <span>Image 3</span>
+                    </div>
+                    <div class="slide">
+                        <div><img src="../DisplayImages/images/LitRevResource4.jpg" alt="Image 4">              
+                        </div>
+                        <span>Image 4</span>
+                    </div>
+                    <div class="slide">
+                        <div><img src="../DisplayImages/images/LitRevResource5.jpg" alt="Image 5">              
+                        </div>
+                        <span>Image 5</span>
+                    </div>
+                </div>
+                <div class="colSpacer linearGradient">
+                    <p>Selection of images taken from a presentation of NWConfigScriptor application.</p>
+                    <p>Shows how different sets of images react with each other.</p> 
+                    <p>Not so effective on small screens so media queries included to change to column with no enlarge effect.</p>
+                </div>
+            </div>
+        </div>
+
+        <a id="gallery2"></a>
+        <hr>
+
+        <!--second option no images-->
+        
+        <div class="wrapper">
+            <div class="col1">
+                <div class="docContainer">
+                    <div class="card">   
+                        <div class="card-title">
+                            <h1>PDF Documents - option 2</h1>
+                        </div>
+                        <div class="textBox">
+                            <p>Displaying pdf documents and make available to download.</p>
+                        </div>
+                    </div>
+                    <div class="docFrame">
+                        <div class="itemRowSpace">
+                            <h3>Cambridge Analytica</h3>
+                            <button onclick="expand(4)" type="button" style="border-style: none;"><i class="fa fa-expand "></i></button>
+                        </div>
+                        <div id="PDFView4"></div>
+                        <a href="../DisplayImages/images/IEEE User Data Privacy_CamAnalytica.pdf"><em>Download</em></a>
+                        
+                    </div>
+                
+                    <div class="docFrame">
+                        <div class="itemRowSpace">
+                            <h3>QRcodes on ID cards</h3>
+                            <button onclick="expand(5)" type="button" style="border-style: none;"><i class="fa fa-expand "></i></button>
+                        </div>
+                        <div id="PDFView5"></div>
+                        <a href="../DisplayImages/images/qrcodes_on_id_cards.pdf"><em>Download</em></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <a id="gallery3"></a>
+        <hr>
+        <br>
+        <!--third option-->
+        <!-- using bootstrap 5 based on GalleryTest.html effect -->
+       
+        <div class="container-fluid text-bg-dark p-2 mt-3">
+            <h3 class="text-center">Gallery - option 3</h3>
+            <div class="container-fluid d-flex flex-column flex-sm-row align-content-center justify-content-center p-1 bg-dark-subtle text-black">               
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
+                            <img src="../DisplayImages/images/processor.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="../DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
+                            <img src="../DisplayImages/images/processor.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid d-flex flex-column flex-sm-row align-content-center justify-content-center p-1 bg-dark-subtle text-black">
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="../DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-light p-3 my-2 mx-1 ">                   
+                    <div class="shadow bg-light-subtle p-3">
+                        <div class="shadow bg-white p-3">
+                            <img src="../DisplayImages/images/processor.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_shadow bg-dark p-3 my-2 mx-1">
+                    <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                        <div class="inner_shadow_light bg-dark p-3 rounded-2">
+                            <img src="../DisplayImages/images/processor.jpg" >
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <a id="gallery4"></a>
+        <hr>
+    </div>
+
+    <!-- forth option -->
+    <!-- using Kevin Powell - new approach to container and wrapper classes (inspired by others)-->
+    <!-- will have to end previous full page container to illustrate -->
+    
+    <div class="flow content-grid pt-3 mt-3">
+        <h3>Not using wrappers or containers but a grid - option 4</h3>
+        <p class="breakout">Uses css grid with line labels to structure the page and provide page width options
+            as class names. Can use flow content-grid classes in a plain div or main div but does
+            need something. These class names are added to <em>headers</em> and <em>paragraph</em> classes 
+            directly rather than creating a separate div. This paragraph is set to breakout column label.
+        </p>
+        <p>Using Kevin Powell - new approach to container and wrapper classes. This paragraph is set to content column label</p>
+        <p>Content line label = middle column (1fr),</p>
+        <p>breakout line label = content + next column (+100px),</p>
+        <p>full-width line label = spans all columns (+100px).</p>
+
+        <section class="full-width text-bg-blue">
+            <p>Added a nested grid of images within the column. This is set to a full width column label.
+                column in a section div.
+            </p>
+        </section>
+        
+
+        <img src="../DisplayImages/images/Banner-lapimage.png" alt="Banner lapimage" class="flow full-width">
+        
+
+        <h1>Header (content)</h1>
+        <p>(content) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+            similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+        <p>(content) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+            similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+    
+    </div>
+    <div class="multi-content-grid">
+        <p class="flow multi-grid-left">The following images are set in a nested grid. This text is set on the left side.</p>
+        <p class="flow multi-grid-mid">- in the middle 20px-</p>
+        <p class="flow multi-grid-right">Whereas this is set to the right</p>
+        
+        <img src="../DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <img src="../DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-right ">
+        <img src="../DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <p class="flow multi-grid-right">This is a text filler amongst images.</p>    
+        <img src="../DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-left">
+        <img src="../DisplayImages/images/linkedin-banner.jpg" alt="Banner 1" class="flow multi-grid-right ">
+    </div>
+    <div class="flow content-grid">
+        <section class="full-width text-bg-blue">
+            <p>(full-width) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+                similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </section>
+
+        <h1>Header 2 (content)</h1>
+        <p class="breakout">(breakout) Animi, est! Voluptatibus facilis blanditiis laudantium nam cum quas eaque consequuntur 
+        similique vero ipsa magni, ratione mollitia beatae? Consectetur quas animi sit?
+        </p>
+
+        <img src="../DisplayImages/images/linkedin-banner2.jpg" alt="Banner 2" class="flow full-width">
+    </div>
+    
+    <a id="gallery5"></a>
+    <hr>
+    
+    <!-- fifth option -->
+    <h1>Fifth option </h1>
+    <div id="outer_wrap" class="container-fluid d-flex align-items-center justify-content-center bg-black p-5">
+        <div id="inner_cont" class="container fix_height d-flex flex-nowrap justify-content-start p-1">
+            <input type="radio" name="slide" id="cl1" checked >
+            <label for="cl1" class="shadow card_plus rounded-5 bg-success-subtle ">
+                <div class="row d-flex flex-nowrap text-white m-0">
+                    <div class="icon_plus rounded-circle m-2 d-flex justify-content-center align-items-center text-bg-dark">1</div>
+                    <div class="description d-flex justify-content-center flex-column">
+                        <h4>Winter</h4>
+                        <p>Winter is cool</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="cl2" checked >
+            <!-- card also background-size: cover, curser: pointer-->
+            <label for="cl2" class="shadow card_plus rounded-5 bg-success-subtle ">
+                <div class="row d-flex flex-nowrap text-white m-0 ">
+                    <div class="icon_plus rounded-circle m-2 d-flex justify-content-center align-items-center text-bg-dark">2</div>
+                    <div class="description d-flex justify-content-center flex-column">
+                             <h4>Summer</h4>
+                        <p>Summer is hot</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="cl3" checked >
+            <label for="cl3" class="shadow card_plus rounded-5 bg-success-subtle ">
+                <div class="row d-flex flex-nowrap text-white m-0">
+                    
+                    <div class="icon_plus rounded-circle m-2 d-flex justify-content-center align-items-center text-bg-dark">3</div>
+                    <div class="description d-flex justify-content-center flex-column">
+                            <h4>Autumn</h4>
+                        <p>Autumn is calming</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="cl4" checked >
+            <label for="cl4" class="shadow card_plus rounded-5 bg-success-subtle ">
+                <div class="row d-flex flex-nowrap text-white m-0">
+                    <div class="icon_plus rounded-circle m-2 d-flex justify-content-center align-items-center text-bg-dark">4</div>
+                    <div class="description d-flex justify-content-center flex-column">
+                           <h4>Spring</h4>
+                        <p>Spring is cheerful</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <br><hr><br>
+
+
+    <!-- repeated code -->
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 shadow-lg bg-success-subtle rounded-3">
+            <div class="col my-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4>View css file</h4>
+                    <button onclick="expand(1)" class="m-2 rounded-pill" type="button" style="border-style: none;">
+                    <i class="fa fa-expand "></i></button>
+                </div>
+                <div id="PDFView1" class="shadow rounded-2 bg-light"></div>
+            </div>
+            <div class="col my-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4>View js file</h4>
+                    <button onclick="expand(2)" class="m-2 rounded-pill" type="button" style="border-style: none;">
+                        <i class="fa fa-expand "></i></button>
+                </div>
+                <div id="PDFView2" class="shadow rounded-2 bg-light"></div>
+            </div>
+            <div class="col my-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4>View HTML file</h4>
+                    <button onclick="expand(3)" class="m-2 rounded-pill" type="button" style="border-style: none;">
+                        <i class="fa fa-expand "></i></button>
+                </div>   
+                <div id="PDFView3" class="shadow rounded-2 bg-light"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="../DisplayImages/displayImages.js"></script>
+    
+</body>
+</html>

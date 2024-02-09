@@ -10,7 +10,7 @@ window.onload = function() {
         }
         PDFObject.embed("../DisplayImages/displayImages.css","#PDFView1", option);
         PDFObject.embed("../DisplayImages/displayImages.js","#PDFView2", option);
-        PDFObject.embed("../pages/DisplayImages.html","#PDFView3", option);
+        PDFObject.embed("../pages/DisplayImages.txt","#PDFView3", option);
         PDFObject.embed("../DisplayImages/images/IEEE User Data Privacy_CamAnalytica.pdf","#PDFView4");
         PDFObject.embed("../DisplayImages/images/qrcodes_on_id_cards.pdf","#PDFView5");
     }

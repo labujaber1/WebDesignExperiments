@@ -10,7 +10,7 @@ window.onload = function() {
       }
       PDFObject.embed("../SinglePageTheme/singlePageTheme.css","#PDFView1", option);
       PDFObject.embed("../SinglePageTheme/singlePageTheme.js","#PDFView2", option);
-      PDFObject.embed("../pages/SinglePageTheme.html","#PDFView3", option);
+      PDFObject.embed("../pages/SinglePageTheme.txt","#PDFView3", option);
   }
   else {
       alert("Your browser does not support PDFs, cannot insert files.");

@@ -10,7 +10,7 @@ window.onload = function() {
         }
         PDFObject.embed("./css/style.css","#PDFView1", option);
         PDFObject.embed("./js/javascript.js","#PDFView2", option);
-        PDFObject.embed("./index.html","#PDFView3", option);
+        PDFObject.embed("./index.txt","#PDFView3", option);
     }
     else {
         alert("Your browser does not support PDFs, cannot insert files.");

@@ -30,7 +30,7 @@ window.onload = function() {
       }
       PDFObject.embed("../ImageInPC/imageInPC.css","#PDFView1", option);
       PDFObject.embed("../ImageInPC/imageInPC.js","#PDFView2", option);
-      PDFObject.embed("../pages/ImageInPC.html","#PDFView3", option);
+      PDFObject.embed("../pages/ImageInPC.txt","#PDFView3", option);
   }
   else {
       alert("Your browser does not support PDFs, cannot insert files.");

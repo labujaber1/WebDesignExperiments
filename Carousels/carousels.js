@@ -9,7 +9,7 @@ window.onload = function() {
       }
       PDFObject.embed("../Carousels/carousels.css","#PDFView1", option);
       PDFObject.embed("../Carousels/carousels.js","#PDFView2", option);
-      PDFObject.embed("../pages/Carousels.html","#PDFView3", option);
+      PDFObject.embed("../pages/Carousels.txt","#PDFView3", option);
   }
   else {
       alert("Your browser does not support PDFs, cannot insert files.");
