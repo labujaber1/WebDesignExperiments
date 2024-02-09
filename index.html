@@ -20,6 +20,7 @@
 
 </head>
 <body class="p-0 m-0">
+    
     <div class="bg-light m-0 p-0">
         <header>
 
@@ -54,9 +55,6 @@
                             <a class="nav-link p-2" href="./pages/ImageInPC.html">Image in PC</a>
                         </li>
                         <li class="nav-item shadow-sm rounded-pill mx-2">
-                            <a class="nav-link p-2" href="./UsaVehicleImports/index.html">Revamp static website v1.0</a>
-                        </li>
-                        <li class="nav-item shadow-sm rounded-pill mx-2">
                             <a class="nav-link p-2" href="./pages/DisplayImages.html">Display images</a>
                         </li>
                         <li class="nav-item shadow-sm rounded-pill mx-2">
@@ -85,22 +83,34 @@
 
             <div class="container text-center shadow p-4 my-5">
                 <h2>Components</h2>
-                <div class="container text-center shadow p-4 my-3 bg-white rounded-2">
-                    <p>Unique component 1</p>
-                    <div class="btn button1">Button1</div>
-                </div>
-                <div class="container text-center text-white shadow p-4 my-3 bg-dark rounded-2">
-                    <p>Unique component 2</p>
-                    <button class="glow-on-hover" type="button">Hover and click</button>
-                </div>
-                <div class="container text-center shadow p-4 my-3 bg-white rounded-2">
-                    <p>Unique component 3</p>
-                    <button class="btn button3">Button3</button>
-                    <p><em>Border not white on click, using html button.</em></p>
-                </div>
-                <div class="container text-center shadow p-4 my-3 bg-white rounded-2">
-                    <p>Unique component 4</p>
-                    <button class="box_lift shadow_lift">Button 4</button>
+                <div class="container d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="unit text-center shadow p-4 bg-white rounded-2 m-2">
+                        <p>Component 1</p>
+                        <div class="btn button1">Button 1</div>
+                    </div>
+                    <div class="unit text-center text-white shadow p-4 bg-dark rounded-2 m-2">
+                        <p>Component 2</p>
+                        <button class="glow-on-hover" type="button">Hover and click</button>
+                    </div>
+                    <div class="unit text-center shadow p-4 bg-white rounded-2 m-2">
+                        <p>Component 3</p>
+                        <button class="btn button3">Button 3</button>
+                        <p><em>Border not white on click, using html button.</em></p>
+                    </div>
+                    <div class="unit text-bg-dark text-center shadow p-4 rounded-2 m-2">
+                        <p>Component 4</p>
+                        <div class="box">
+                            <button class="button4">Button 4</button>
+                        </div>
+                    </div>
+                    <div class="unit text-center shadow p-4 bg-white rounded-2 m-2">
+                        <p>Component 5</p>
+                        <button class="">Button 5</button>
+                    </div>
+                    <div class="unit text-bg-dark text-center shadow p-4 rounded-2 m-2">
+                        <p>Component 6</p>
+                        <button class="">Button 6</button>
+                    </div>
                 </div>
             </div>
             
@@ -135,21 +145,250 @@
            
         </main>
     
-        <footer id="footer_exp" class=" mt-3 p-1" 
+        <div  class=" mt-3 p-1" 
         style=
         "background-image: url('./DisplayImages/images/expanding_gallery/underwater.jpg');
         background-size: cover;">
+        <div class="pb-3 text-center text-uppercase fs-4">Trying to get a pressure spread effect</div>
+        <!-- shadows with scaling effects -->
+            <div id="water_image" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 align-items-center">
+                <div id="image_on_water" class="col p-5 text-center">
+                    <h4>Image on water</h4>
+                    <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt="" class="w-75 m-2 light_shadow rounded-5" title="Tried with just CSS. mmm!">
+                    
+                </div>
+                <div id="image_over_water" class="col p-5 text-center">
+                    <h6>SPLASH!</h6>
+                    <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt="" class="w-75 m-2 rounded-5" title="Tried with just CSS. mmmeh!">
+                    <h4>Image over water</h4>
+                </div>
+            </div>
+            <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Playing with shadow glowing effect, not subtle.</div>
+            <!-- shadows with no effects -->
+            <div id="image_shadows" class="d-flex p-2 bg-black flex-wrap justify-content-evenly">
+                <figure class="m-4">
+                    <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt="" class=" d-flex m-2 shadow_radiant_light rounded-5 " title="radiant">
+                    <figcaption class="text-white">Radiant light class</figcaption>
+                </figure>
+                <figure class="m-4">
+                    <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt="" class=" d-flex m-2 shadow_vibrant_light rounded-5 " title="vibrant">
+                    <figcaption class="text-white">Vibrant light class</figcaption>
+                </figure>
+                <figure class="m-4">
+                    <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt="" class="d-flex m-2 shadow_glowing_light rounded-5 " title="glowing">
+                    <figcaption class="text-white">Glowing light class</figcaption>
+                </figure>
+                <figure class="m-4">
+                    <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt="" class="d-flex m-2 shadow_outer_light rounded-5 " title="outer">
+                    <figcaption class="text-white">Outer light class</figcaption>
+                </figure>  
+            </div>
+            <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Using bootstrap 5 flexbox</div>
             
-            <div class="d-flex p-5">
-                <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt="" class="w-50 mx-2 light_shadow rounded-5">
-                <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt="" class="w-50 mx-2 light_shadow rounded-5">
-                <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt="" class="w-50 mx-2 light_shadow rounded-5">
+            <!-- Flipping cards animation -->
+            <div class="container border border-white border-1 p-2">
+                <div class="text-white bg-black pb-3 text-center">
+                    <h4 class="text-uppercase py-2">Flipping cards</h4>
+                    <p>Using random unsplash images.</p>
+                    <p>These are common examples found everywhere such as w3schools.</p>
+                </div>
+                <div class="flip_card_wrapper">
+                    <div class="flip_card_container">
+                        <div class="flip_card_header">
+                            <p>Very popping text</p>
+                        </div>
+                        <div class="flip_card1">
+                            <div class="flip_card_front1"></div>
+                            <div class="flip_card_back1">
+                                <div class="flip_card_content1">
+                                    <h4>Back of card</h4>
+                                    <p>This is the back of the flipping card rotating on the Y and Z axis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flip_card_container">
+                        <div class="flip_card_header">
+                            <p>Flat text</p>
+                        </div>
+                        <div class="flip_card2">
+                            <div class="flip_card_front2"></div>
+                            <div class="flip_card_back2">
+                                <h4>Back of card</h4>
+                                <p>This is the back of the flipping card rotating on the Y axis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flip_card_container">
+                        <div class="flip_card_header">
+                            <p>Popping text</p>
+                        </div>
+                        <div class="flip_card3">
+                            <div class="flip_card_front3">
+                                <div class="flip_card_title3">Title</div>
+                                <div class="flip_card_subtitle3">Subtitle</div>
+                            </div>
+                            <div class="flip_card_back3">
+                                <div class="flip_card_content3">
+                                    <h4>Back of card</h4>
+                                    <p>This is the back of the flipping card rotating on the X axis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flip_card_container">
+                        <div class="flip_card_header">
+                            <p>Popping text</p>
+                        </div>
+                        <div class="flip_card4">
+                            <div class="flip_card_front4">
+                                <div class="flip_card_title4">Title</div>
+                                <div class="flip_card_subtitle4">Subtitle</div>
+                            </div>
+                            <div class="flip_card_back4">
+                                <div class="flip_card_content4">
+                                    <h4>Back of card</h4>
+                                    <p>This is the back of the flipping card rotating on the Y axis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid h-75  "
+            style=
+                "background-image: url('./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg');
+                background-size: cover;">
+            <h1>Various effects from ui.glass and css.glass generators.</h1>
+            <h4>Plenty of other sites available.</h4>
+            <div class="container d-flex flex-wrap py-5 justify-content-evenly">
+                <div class="glass_box glass_effect3 m-2">
+                    <h4>Glassmorphism effect 3</h4>
+                </div>
+                <div class="glass_box glass_effect1 text-white m-2">
+                    <h4>Glassmorphism effect 1</h4>
+                </div>
+                <div class="glass_box glass_effect2 m-2">
+                    <h4>Glassmorphism effect 2</h4>
+                </div>
                 
             </div>
-            
-        </footer>
+        </div>
+        
+    </div>
+
+    <div class="text-white bg-black py-3 text-center text-uppercase fs-4">Expanding image cards on hover</div>
+    <div id="expanding_card_container" class="d-flex flex-wrap justify-content-center align-items-center p-5">
+        <div id="ce1" class="card_expand">
+            <div class="image_box">
+                <img src="https://source.unsplash.com/random/300x300">
+            </div>
+            <div class="content_hidden">
+                <h4>Hover over image</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis aliquam beatae alias iure veritatis, dolorum ratione 
+                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum, 
+                    error odit exercitationem nulla.
+                </p>
+                <a href="">Read more</a>
+            </div>
+        </div>
+        <div id="ce2" class="card_expand">
+            <div class="image_box">
+                <img src="https://source.unsplash.com/random/300x301">
+            </div>
+            <div class="content_hidden">
+                <h4>Using random images..</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis aliquam beatae alias iure veritatis, dolorum ratione 
+                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum, 
+                    error odit exercitationem nulla.
+                </p>
+                <a href="">Read more</a>
+            </div>
+        </div>    
+        <div id="ce3" class="card_expand">
+            <div class="image_box">
+                <img src="https://source.unsplash.com/random/300x302">
+            </div>
+            <div class="content_hidden">
+                <h4>..from unsplash</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis aliquam beatae alias iure veritatis, dolorum ratione 
+                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum, 
+                    error odit exercitationem nulla.
+                </p>
+                <a href="">Read more</a>
+            </div>
+        </div>
+        <div id="ce4" class="card_expand">
+            <div class="image_box">
+                <img src="https://source.unsplash.com/random/300x303">
+            </div>
+            <div class="content_hidden">
+                <h4>..glass effect, plain white</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis aliquam beatae alias iure veritatis, dolorum ratione 
+                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum, 
+                    error odit exercitationem nulla.
+                </p>
+                <a href="">Read more</a>
+            </div>
+        </div>
     </div>
     
+    <!-- playing with perspective -->
+    
+    <div class="text-white bg-black py-3 text-center text-uppercase fs-4">Playing a little with perspective</div>
+            
+    <div class="persp_wrapper" style=
+    "background-image: url('http://source.unsplash.com/random/1000x500');
+    background-size: cover;">
+        <div class="persp_bg2 ">ptbnmnhthn</div> 
+        <div class="persp_bg1 ">pfrgth</div>
+
+        <div class="persp_container bg-primary-subtle p-2">
+            <div id="persp_left">
+                <h3>Overlaying cards</h3>
+                <p>A little over kill with background having random image overlayed with two polygon shapes.</p>
+                <p>Designcourse.com Gary Simon</p>
+                <p>The more text added the further the cards move downwards as set to align in center.
+                    Not mobile friendly but nice perspective effect.
+                </p>
+            </div>
+            <div id="persp_right">
+                
+                <ul>
+                    <li>
+                        <img src="https://source.unsplash.com/random/100x100">
+                        <span>
+                            <strong>Other1</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="https://source.unsplash.com/random/100x101">
+                        <span>
+                            <strong>Other2</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="https://source.unsplash.com/random/100x102">
+                        <span>
+                            <strong>Other3</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </div>
+
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="text/javascript" language="javascript" src="./js/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
