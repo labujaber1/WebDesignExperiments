@@ -1,4 +1,4 @@
-
+//add remove classes to container element that displays data
 function slidePage(pageName) {
     const pageContainer = document.getElementById('slider-page-container');
     
@@ -16,8 +16,8 @@ function slidePage(pageName) {
             // Set a timeout to remove the slide-right class after the slide-in animation completes
             setTimeout(() => {
               pageContainer.classList.remove('slide-right');
-            }, 1000); // Adjust the timing to match the transition duration in CSS
-          }, 1000); // Adjust the timing to match the transition duration in CSS
+            }, 1000); 
+          }, 1000); 
         })
       .catch(error => console.error('Error loading page:', error));
   }
