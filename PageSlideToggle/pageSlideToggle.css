@@ -14,3 +14,11 @@
 .slide-right {
     transform: translateX(15%);
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

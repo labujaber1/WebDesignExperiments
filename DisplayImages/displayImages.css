@@ -244,6 +244,10 @@ img {
     box-shadow: var(--inner-shadow-dark);
 }
 
+.flip-image {
+    transform: scaleX(-1);
+}
+
 /* forth option */
 
 .flow {
@@ -334,13 +338,13 @@ img.full-width {
     /*cubic-bezier(0.28, -0.03, 0, 0.99)*/
     display: flex;
     align-items: flex-end;
-    margin: 0 10px ;
+    margin: 0 10px;
     overflow: hidden;
 }
 
 .card_plus .row .icon_plus {
     width: 50px;
-   
+
 }
 
 .card_plus .row .icon_plus .description {
@@ -357,11 +361,11 @@ input {
     display: none;
 }
 
-input:checked + label {
+input:checked+label {
     width: 600px;
 }
 
-input:checked + label .description {
+input:checked+label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
@@ -372,18 +376,21 @@ input:checked + label .description {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .card_plus[for="cl2"] {
     background-image: url(../DisplayImages//images/expanding_gallery/Rabbit.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .card_plus[for="cl3"] {
     background-image: url(../DisplayImages//images/expanding_gallery/red_dead_arthur.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .card_plus[for="cl4"] {
     background-image: url(../DisplayImages//images/expanding_gallery/Torture.jpg);
     background-position: center;
@@ -392,13 +399,11 @@ input:checked + label .description {
 }
 
 @media (width < 700px) {
-    #outer_wrap {
-        
-    }
+    #outer_wrap {}
 
     #inner_cont {
-       flex-direction: column;
-       flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
 }
