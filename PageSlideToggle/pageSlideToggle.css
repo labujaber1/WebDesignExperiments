@@ -1,0 +1,16 @@
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-page {
+    transition: transform 1.5s;
+}
+
+.slide-left {
+    transform: translateX(-120%);
+}
+
+.slide-right {
+    transform: translateX(15%);
+}
