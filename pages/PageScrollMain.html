@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Scroll Ideas</title>
+    <meta name="author" content="Page scroll ideas">
+    <meta name="description" content="Ideas of replacing page scroll">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for bootstrap css (js at bottom of page)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../PageScrollMain/pageScrollMain.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Web Design Experiments</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item shadow-sm rounded-pill mx-2">
+                        <a class="nav-link p-2" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item shadow-sm rounded-pill mx-2">
+                        <a class="nav-link p-2" href="./FrontpageFadeScroll.html">Front page fade scroll</a>
+                    </li>
+                    <li class="nav-item shadow-sm rounded-pill mx-2">
+                        <a class="nav-link p-2" href="./PageSectionsFadeView.html">Page sections fade view</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid py-4 bg-warning-subtle w-100">
+            <div class="container shadow p-4 rounded bg-dark-subtle">
+
+                <h1>Replace Page Scroll</h1>
+                <p>Alternative front page sections view rather than just stacking sections and scrolling full page
+                </p>
+
+
+
+            </div>
+            <div class="container shadow-lg my-4 p-4 rounded bg-light-subtle">
+                <div class="w-100">
+                    <h2><a class="text-decoration-none" href="./FrontpageFadeScroll.html">Front Page Fade Scroll</a>
+                    </h2>
+                    <p>Each section of the page scrolls upwards fading into view and overlapping existing sections
+                        which
+                        fade out of view.
+                        The page is static.
+                    </p>
+                </div>
+                <div class="d-lg-flex w-100">
+
+                    <div class="img-fluid my-4 mx-2 shadow">
+                        <img class="img-thumbnail hover-glow" src="../PageScrollMain/images/FrontPageFadeScroll2.png"
+                            alt="example 1">
+                    </div>
+                    <div class="img-fluid my-4 mx-2 shadow">
+                        <img class="img-thumbnail hover-glow" src="../PageScrollMain/images/FrontPageFadeScroll.png"
+                            alt="example 2">
+                    </div>
+                </div>
+            </div>
+            <div class="container shadow-lg my-4 p-4 rounded bg-light-subtle">
+                <div class="w-100">
+                    <h2><a class="text-decoration-none" href="./PageSectionsFadeView.html">Page Sections Fade View</a>
+                    </h2>
+                    <p>Each page section is a button in the nav bar and fades into view when clicked.
+                        Each button should be given a name that tells a story for each section of the front page
+                        rather
+                        than call for action, testimonials etc.
+                    </p>
+                </div>
+                <div class="d-lg-flex w-100">
+
+                    <div class="img-fluid my-4 mx-2 shadow">
+                        <img class="img-thumbnail hover-glow" src="../PageScrollMain/images/PageSectionsFadeView1.png"
+                            alt="example 1">
+                    </div>
+                    <div class="img-fluid my-4 mx-2 shadow">
+                        <img class="img-thumbnail hover-glow" src="../PageScrollMain/images/PageSectionsFadeView2.png"
+                            alt="example 2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="../PageScrollMain/pageScrollMain.js"></script>
+
+</body>
+
+</html>

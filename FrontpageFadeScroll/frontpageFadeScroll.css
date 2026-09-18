@@ -1,0 +1,81 @@
+:root {
+    --scroll-fixed-height: 90dvh;
+}
+
+
+.nav-fixed-height {
+    height: 10dvh;
+}
+
+.outer-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: rgb(152, 227, 252);
+}
+
+.inner-container {
+    background-color: transparent;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0 auto;
+    height: var(--scroll-fixed-height);
+
+}
+
+#scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#scrollContainer {
+    scrollbar-width: none;
+}
+
+.section {
+    position: sticky;
+    width: 90%;
+    height: var(--scroll-fixed-height);
+    top: 0;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+}
+
+.section img {
+    width: auto;
+    height: 18rem;
+}
+
+.fade-out {
+    animation: fade-out 1s linear both;
+}
+
+.fade-in {
+    animation: fade-in 1s linear both;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
