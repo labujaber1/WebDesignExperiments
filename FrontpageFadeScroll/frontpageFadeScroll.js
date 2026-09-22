@@ -27,10 +27,6 @@ const container = document.getElementById('scrollContainer');
     });
   }
 
-  // Overlap sections and come into view on scroll
-  function sectionsOverlap() {
-
-  }
   // Initialize
   updateSections();
 
