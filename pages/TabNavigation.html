@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for bootstrap css (js at bottom of page)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../TabNavigation/tabNavigation.css">
+
+</head>
+
+<body>
+    <div class="container-fluid bg-dark m-0">
+        <!--page nav-->
+        <div class="  bg-black d-flex flex-row rounded">
+            <div class=" col-2  p-2">
+                <div class="position-sticky top-0 ">
+                    <ul class="nav nav-tabs d-flex flex-column">
+                        <a class="my-3 mx-auto text-light fw-bolder text-decoration-none"
+                            href="../pages/PageScrollMain.html">HOME</a>
+
+
+                        <a class="btn fixedBox bg-danger mb-1 rounded" id="intro-tab" href="#intro" data-toggle="tab"
+                            title="Intro">
+                            Intro
+
+                        </a>
+
+                        <a class="btn fixedBox bg-warning mb-1 rounded" id="page1-tab" href="#page1" data-toggle="tab"
+                            title="page 1">
+                            Page 1
+                        </a>
+
+
+                        <a class="btn fixedBox bg-secondary mb-1 rounded" id="page2-tab" href="#page2" data-toggle="tab"
+                            title="page 2">
+                            Page 2
+                        </a>
+
+                        <a class="btn fixedBox bg-info mb-1 rounded" id="page3-tab" href="#page3" data-toggle="tab"
+                            title="page 3">
+                            Page 3
+
+                        </a>
+
+                        <a class="btn fixedBox bg-success mb-1 rounded" id="page4-tab" href="#page4" data-toggle="tab"
+                            title="page 4">
+                            Page 4
+                        </a>
+
+                        <a class="btn fixedBox bg-danger-subtle mb-1 rounded" id="page5-tab" href="#page5"
+                            data-toggle="tab" title="page 5">
+                            Page 5
+                        </a>
+
+                        <a class="btn fixedBox bg-primary mb-1 rounded" id="page6-tab" href="#page6" data-toggle="tab"
+                            title="page 6">
+                            Page 6
+
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!--page display-->
+            <div id="displayPageContainer" class=" col-10 px-2 vh-100 overflow-hidden ">
+                <div id="displayPage" class=" tab-content flex-column " role="presentation">
+                    <section>
+                        <div id="intro" class="tab-pane fade-in active " role="tabpanel" aria-labelledby="intro-tab">
+                            <div class="page align-content-center justify-content-evenly bg-danger vh-100 w-auto p-2">
+
+                                <h1>Intro</h1>
+                                <p>Uses tabs and panels to display each page with height set to 100dvh.</p>
+                                <p>Fixed space for each page, no scroll, overflow hidden.</p>
+                                <p>Promotes concise design.</p>
+                                <p>Tabs have the same background colour as the example pages but could be an image of
+                                    each
+                                    page albeit a segment of the page as tabs are set to fixed 5rem height.</p>
+                                <p>Using bootstrap 5.3.8. No extra js beyond that. Css only for tabs styling.</p>
+                                <p>Typically a footer would be at the bottom but the data could be merged within a page
+                                    layout such as about us</p>
+                                <p>Tabs have set height but can be set to auto with the container set to fit content if
+                                    more are required.</p>
+                                <p>No scroll and set page height harks back to early internet sites. However, scroll can
+                                    be added to the page.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page1" class="tab-pane fade-in " role="tabpanel" aria-labelledby="page1-tab">
+                            <div class="page align-content-center justify-content-evenly bg-warning vh-100 w-auto p-2">
+                                <h1>Page 1</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page2" class="tab-pane fade-in " role="tabpanel" aria-labelledby="page2-tab">
+                            <div
+                                class="page align-content-center justify-content-evenly bg-secondary vh-100 w-auto p-2">
+
+                                <h1>Page 2</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page3" class="tab-pane fade-in " role="tabpanel" aria-labelledby="page3-tab">
+                            <div class="page align-content-center justify-content-evenly bg-info vh-100 w-auto p-2">
+
+                                <h1>Page 3</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page4" class="tab-pane fade-in " role="tabpanel" aria-labelledby="page4-tab">
+                            <div class="page align-content-center justify-content-evenly bg-success vh-100 w-auto p-2">
+
+                                <h1>Page 4</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page5" class="tab-pane fade-in " role="tabpanel" aria-labelledby="page5-tab">
+                            <div
+                                class="page align-content-center justify-content-evenly bg-danger-subtle vh-100 w-auto p-2">
+
+                                <h1>Page 5</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="page6" class="tab-pane fade-in" role="tabpanel" aria-labelledby="page6-tab">
+                            <div class=" page align-content-center justify-content-evenly bg-primary vh-100 w-auto p-2">
+                                <h1>Page 6</h1>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="../TabNavigation/tabNavigation.js"></script>
+
+</body>
+
+</html>
