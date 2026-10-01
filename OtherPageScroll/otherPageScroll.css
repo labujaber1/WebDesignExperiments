@@ -1,0 +1,93 @@
+* {
+    --page-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+
+}
+
+
+.bgImage {
+    background-image: url("/ImagesLibrary/coffee-cups.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(134, 28, 234);
+    background-position: center;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    color: white;
+    align-content: center;
+    text-align: center;
+    box-shadow: var(--page-shadow);
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .textOverlay {
+        background-color: rgba(47, 79, 79, 0.1);
+        backdrop-filter: blur(8px);
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px black;
+    }
+
+}
+
+.pages {
+    background-color: rgb(60, 2, 2);
+}
+
+.page {
+    /*border-radius: 1rem;*/
+    box-shadow: var(--page-shadow);
+}
+
+/* wrap in reduced motion media query to respect user preferences */
+@media (prefers-reduced-motion: no-preference) {
+    .page {
+        animation: appear linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    .page.exit {
+        animation: disappear linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            scale: 0.75;
+            border-radius: 1rem;
+        }
+
+        to {
+            opacity: 1;
+            scale: 1;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes disappear {
+        from {
+            opacity: 1;
+            scale: 1;
+            border-radius: 0;
+        }
+
+        to {
+            opacity: 0;
+            scale: 0.75;
+            border-radius: 1rem;
+        }
+    }
+
+    ::view-transition-old(disappear) {
+        animation: 0.5s linear both opacity;
+    }
+
+    ::view-transition-new(appear) {
+        animation: 1s linear both;
+    }
+}
