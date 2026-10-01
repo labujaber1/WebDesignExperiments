@@ -5,3 +5,15 @@
 .hover-glow:hover {
     box-shadow: 0 7px 15px rgba(251, 197, 5, 0.5);
 }
+
+video {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    video {
+        max-width: 100%;
+    }
+}
