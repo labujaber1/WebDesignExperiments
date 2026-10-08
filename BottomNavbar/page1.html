@@ -19,67 +19,162 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links for bootstrap css (js at bottom of page)-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
-    <link rel="stylesheet" type="text/css" href="../BottomNavbar/bottomNavbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../BottomNavbar/main.css">
 
 
 </head>
 
 <body>
-    <main>
-        <div id="page1" class="pageContainer ">
-            <div class="page">
-                <div class="textboxContainer">
+    <div class="container-fluid m-0 p-0">
+        <div class="d-flex row-cols-1">
 
-                    <h1 class="title">Page 1 Header</h1>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.
-
-                    </p>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                        incididunt <q>ut labore et dolore magna aliqua</q>.
-                    </p>
-                    <p class="">The end.</p>
+            <nav class="w-auto navbar text-bg-primary position-fixed align-content-start rounded m-2">
+                <div class="d-flex px-2">
+                    <a class="navbar-brand" href="#">
+                        <div class="fa fa-magic fa-1x "></div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <div class="blockquoteContainer">
-                    <blockquote class="">This is a quote.</blockquote>
-                </div>
-                <div class="imageContainer">
-                    <img class="image" src="../ImagesLibrary/two-in-hammock.jpg" alt="Two in Hammock" loading="eager">
-                    <img class="image" src="../ImagesLibrary/koala-tree.jpg" alt="Koala in Tree" loading="eager">
+                <div class="collapse navbar-collapse border border-1 border-primary my-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">page2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">position</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                fixed
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">width, height</a></li>
+                                <li><a class="dropdown-item" href="#">grows with content</a></li>
+                                <li><a class="dropdown-item" href="#">rather than </a></li>
+                                <li><a class="dropdown-item" href="#">fixed, but can change to fixed and use flex-
+                                        wrap</a></li>
+                            </ul>
+                        </li>
 
+                        <li class="d-flex flex-row justify-content-around">
+                            <a class="nav-link fa fa-facebook p-2 bg-info border border-2 border-warning-subtle rounded"
+                                href="#"></a>
+                            <a class="nav-link fa fa-twitter p-1 bg-info border border-2 border-warning-subtle rounded"
+                                href="#"></a>
+                            <a class="nav-link fa fa-linkedin p-1 bg-info border border-2 border-warning-subtle rounded"
+                                href="#"></a>
+                            <a class="nav-link fa fa-whatsapp p-1 bg-info border border-2 border-warning-subtle rounded"
+                                href="#"></a>
+                        </li>
+                        <br>
+                        <hr>
+                        <p>Footer stuff</p>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="addressDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Company details
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="addressDropdown">
+                                <li>
+                                    <p>Some Company Name</p>
+                                    <p>12 Clarkson Ind Est.</p>
+                                    <p>Town, City</p>
+                                    <p>#postcode as link to open google maps</p>
+                                    <a class="dropdown-item text-decoration-underline" href="#">Postcode</a>
+                                </li>
+                                <li>
+                                    <p class="fa fa-address-book"> Badge of awards</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Company Statement page</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Policies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cookies</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy</a></li>
+                                <li><a class="dropdown-item" href="#">Bullsh*t</a></li>
+                                <li><a class="dropdown-item" href="#">Unread</a></li>
+                            </ul>
+                        </li>
+                        <p>Done with bootstrap 5</p>
+                    </ul>
                 </div>
-                <div class="textboxContainer">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rem illo voluptatem voluptate
-                        quia blanditiis quidem debitis modi molestiae veritatis voluptates fugit placeat reiciendis
-                        consequatur, officia laboriosam est sint perspiciatis!</p>
+            </nav>
+
+
+            <div class="col">
+
+                <div id="page1" class="pageContainer ">
+                    <div class="page">
+                        <div class="textboxContainer">
+
+                            <h1 class="title">Page 1 Header</h1>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+
+                            </p>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                tempor
+                                incididunt <q>ut labore et dolore magna aliqua</q>.
+                            </p>
+                            <p class="">The end.</p>
+                        </div>
+                        <div class="blockquoteContainer">
+                            <blockquote class="">This is a quote.</blockquote>
+                        </div>
+                        <div class="imageContainer">
+                            <img class="image" src="../ImagesLibrary/two-in-hammock.jpg" alt="Two in Hammock"
+                                loading="eager">
+                            <img class="image" src="../ImagesLibrary/koala-tree.jpg" alt="Koala in Tree"
+                                loading="eager">
+
+                        </div>
+                        <div class="textboxContainer">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rem illo voluptatem
+                                voluptate
+                                quia blanditiis quidem debitis modi molestiae veritatis voluptates fugit placeat
+                                reiciendis
+                                consequatur, officia laboriosam est sint perspiciatis!</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-    </main>
 
-    <nav>
-        <div class="navbarContainer">
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="hamburger">|☰|</label>
-            <div class="logo"><a href="index.html">BottNav</a></div>
-            <ul class="menu">
-                <li><a href="../BottomNavbar/index.html">Home</a></li>
-                <li><a href="../BottomNavbar/page1.html">Page 1</a></li>
-                <li><a href="../BottomNavbar/page2.html">Page 2</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            </div><!--end content column-->
+        </div><!--end row-col-2-->
+    </div><!--end container-fluid-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>-->
+        crossorigin="anonymous"></script>
     <!--<script type="text/javascript" language="javascript" src="../"></script>-->
 
 </body>

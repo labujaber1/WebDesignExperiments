@@ -1,0 +1,143 @@
+@import url('bottomNavbar.css');
+
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.column {
+    width: 100dvw;
+    flex: 1 0 0;
+}
+
+.pageContainer {
+    background-color: #333;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem 0 4rem 0;
+
+
+}
+
+.homepage {
+    display: block;
+    padding: 1rem 4rem 2rem 4rem;
+    line-height: 1.5em;
+    background-color: darkslategrey;
+
+    h1 {
+        text-shadow: white 1px 0 20px;
+
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.page {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem 4rem 2rem 4rem;
+    background-color: black;
+    box-shadow: 2px 2px 15px rgba(205, 205, 205, 0.5);
+    line-height: 1.5em;
+    border-radius: 10px;
+
+    h1 {
+        color: wheat
+    }
+
+    p {
+        color: whitesmoke;
+    }
+
+}
+
+@media (max-width: 789px) {
+    .page {
+        width: 100%;
+    }
+}
+
+/*.homepage,
+.page {
+    display: block;
+    transition: all 2s ease;
+}*/
+
+.title {
+    margin: 0.25rem 0;
+    padding: 0.5rem 0;
+}
+
+.textboxContainer {
+    max-width: clamp(50dvw, 75%, 80dvh);
+    padding: 1rem;
+    margin: auto;
+
+}
+
+/* css only nav control for single page nav ../pages/BottomNavbar.html */
+/* not quite working as intended without js to help, so split the pages */
+/*#page1,
+#page2 {
+    display: none;
+
+}
+
+#home:target {
+    display: block;
+}
+
+#page1:target {
+    display: block;
+}
+
+#page2:target {
+    display: block;
+}
+
+#home:not(:target):not(:has(~ .page:target)) {
+    display: none;
+}*/
+
+
+
+.blockquoteContainer {
+    color: lightblue;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgba(56, 56, 56);
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1rem auto;
+
+}
+
+.image {
+    width: inherit;
+    height: 50dvh;
+    box-shadow: 0 2px 5px rgba(205, 205, 205, 1);
+    margin: 0.25rem;
+
+}
