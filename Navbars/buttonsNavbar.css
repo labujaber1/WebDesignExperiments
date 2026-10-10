@@ -1,0 +1,208 @@
+/* inspired by freefrontend.com/css-circle-menus */
+
+.wrappNav {
+    background-color: rgb(50, 50, 50);
+    min-height: 10dvh;
+    display: grid;
+    place-items: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.menuContainer {
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    /*extra*/
+    position: fixed;
+    display: block;
+    top: 1%;
+    left: 50%
+}
+
+.footerOpenButton,
+.menuOpenButton,
+.menuItem {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    color: white;
+    transition: transform ease-out 200ms;
+    border: red 2px solid;
+}
+
+.menuOpen,
+.footerOpen {
+    display: none;
+}
+
+.menuOpen:checked+.menuOpenButton {
+    transform: translate3d(0, 0, 0) rotate(90deg);
+}
+
+.menuItem:hover {
+    background: cyan;
+}
+
+.menuItem {
+    transition-duration: 0.2s;
+}
+
+
+.menuOpenButton {
+    background: #0487a4;
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.3s;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.menuOpenButton:hover {
+    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menuOpen:checked+.menuOpenButton {
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+    transform: scale(1, 1) translate3d(0, 0, 0);
+}
+
+.menuOpen:checked~.menuItem {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1.2);
+}
+
+/*first two children input and label*/
+.menuOpen:checked~.menuItem:nth-child(3) {
+    /*transform: translate3d(0.08361px, -104.99997px, 0);*/
+    transform: translate3d(-180px, 0px, 0);
+}
+
+.menuOpen:checked~.menuItem:nth-child(4) {
+    transition-delay: 0.08s;
+    /*transform: translate3d(90.9466px, -52.47586px, 0);*/
+    transform: translate3d(-120px, 0px, 0);
+}
+
+.menuOpen:checked~.menuItem:nth-child(5) {
+    transition-delay: 0.16s;
+    /*transform: translate3d(90.9466px, 52.47586px, 0);*/
+    transform: translate3d(-60px, 0px, 0);
+}
+
+/*extra*/
+.menuOpen:checked~.menuItem:nth-child(6) {
+    transition-delay: 0.24s;
+    /*transform: translate3d(0.08361px, 104.99997px, 0);*/
+    transform: translate3d(60px, 0px, 0);
+}
+
+.menuOpen:checked~.menuItem:nth-child(7) {
+    transition-delay: 0.32s;
+    /*transform: translate3d(-90.86291px, 52.62064px, 0);*/
+    transform: translate3d(120px, 0px, 0);
+}
+
+.menuOpen:checked~.menuItem:nth-child(8) {
+    transition-delay: 0.4s;
+    /*transform: translate3d(-91.03006px, -52.33095px, 0);*/
+    transform: translate3d(180px, 0px, 0);
+}
+
+/*input*/
+.menuOpen:checked~.menuItem:nth-child(9) {
+    transition-delay: 0.48s;
+    /*transform: translate3d(-0.25084px, -104.9997px, 0);*/
+    transform: translate3d(0px, 60px, 0);
+}
+
+/*label*/
+.menuOpen:checked~.menuItem:nth-child(10) {
+    transition-delay: 0.48s;
+    /*transform: translate3d(-0.25084px, -104.9997px, 0);*/
+    transform: translate3d(0px, 60px, 0);
+}
+
+/**/
+
+.menuOpenButton,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+    box-shadow: 3px 3px 10px 0 rgba(178, 34, 34, 0.5);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.one {
+    background-color: red;
+}
+
+.one:hover {
+    color: red;
+    text-shadow: none;
+}
+
+.two {
+    background-color: orange;
+}
+
+.two:hover {
+    color: orange;
+    text-shadow: none;
+}
+
+.three {
+    background-color: gold;
+}
+
+.three:hover {
+    color: #ccac00;
+    text-shadow: none;
+}
+
+.four {
+    background-color: green;
+}
+
+.four:hover {
+    color: green;
+    text-shadow: none;
+}
+
+.five {
+    background-color: blue;
+}
+
+.five:hover {
+    color: blue;
+    text-shadow: none;
+}
+
+.six {
+    background-color: indigo;
+}
+
+.six:hover {
+    color: indigo;
+    text-shadow: none;
+}
+
+.seven {
+    background-color: rgb(170, 85, 11);
+}
+
+.seven:hover {
+    color: rgb(0, 130, 130);
+    text-shadow: none;
+}
