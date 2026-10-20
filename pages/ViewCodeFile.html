@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Site Code Base</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="view-transition" content="same-origin">
+    <style>
+        @media (prefers-reduced-motion: no-preference) {
+
+            @view-transition {
+                navigation: auto;
+            }
+        }
+    </style>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for bootstrap css (js at bottom of page)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../ViewCodeFile/viewCodeFile.css">
+    <script src="../ViewCodeFile/viewCodeFile.js"></script>
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid border border-2 border-success bg-success-subtle">
+            <div class="fileViewCheck2">
+                <p>Preview the current site's source code using objects, iframes and a little js. Nothing fancy.
+                    Refresh page if css and js not visible</p>
+                <a href="../index.html"><i class="fa fa-home" style="font-size:2em;color:darkgreen;"></i></a>
+            </div>
+            <!--container for file display-->
+            <div class="containerVcf">
+                <div class="fileViewCheck2">
+                    <button type="button" id="toggleButton" onclick="toggleSource()">View HTML source code</button>
+                    <div class="file">
+                        <div class="htmlWrapper" id="htmlWrap">
+                            <pre id="htmlPreviewArea" hidden></pre>
+                        </div>
+                    </div>
+                </div>
+                <!--label text controlled in css-->
+                <div class="fileViewCheck1">
+                    <input type="checkbox" class="codeFileOpen" name="codeFile2" id="codeFile2" />
+                    <label for="codeFile2" class="codeFileButton2" id="label2"></label>
+                    <div class="file" id="css">
+                        <div class="fileContent">
+                            <!--js adds page file path to data-->
+                            <object id="cssObject" data="" type="text/plain" width="400px" height="500px">
+                            </object>
+                        </div>
+                    </div>
+                </div>
+                <!--label text controlled in css-->
+                <div class="fileViewCheck2">
+                    <input type="checkbox" class="codeFileOpen" name="codeFile3" id="codeFile3" />
+                    <label for="codeFile3" class="codeFileButton3" id="label3"></label>
+                    <div class="file" id="js">
+                        <div class="fileContent">
+                            <!--js adds page file path to data-->
+                            <object id="jsObject" data="" type="text/plain" width="400px" height="500px">
+                            </object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="../ViewCodeFile/viewCodeFile.js"></script>
+
+</body>
+
+</html>

@@ -8,8 +8,8 @@ window.onload = function() {
             height: "30rem",
             width: "100%"
         }
-        PDFObject.embed("./css/style.css","#PDFView1", option);
-        PDFObject.embed("./js/javascript.js","#PDFView2", option);
+        PDFObject.embed("./Index/index.css","#PDFView1", option);
+        PDFObject.embed("./Index/index.js","#PDFView2", option);
         PDFObject.embed("./index.txt","#PDFView3", option);
     }
     else {
@@ -26,22 +26,6 @@ function expand(pdfNum) {
         pdf.style.display = "flex";
     }
 }
-// Landing page theme end ###############
-
-
-// Page 2 start
-
-// Page 2 end #################
-
-
-// Page 3 start 
-
-// Page 3 end ##################
-
-
-// Page 4 start
-
-// Page 4 end ##############
 
 
 

@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../TabNavigation/tabNavigation.css">
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -63,7 +65,7 @@
 
                         <a class="btn fixedBox bg-primary mb-1 rounded" id="page6-tab" href="#page6" data-toggle="tab"
                             title="page 6">
-                            Page 6
+                            View Code
 
                         </a>
 
@@ -75,12 +77,13 @@
             <div id="displayPageContainer" class=" col-10 px-2 vh-100 overflow-hidden ">
                 <div id="displayPage" class=" tab-content flex-column " role="presentation">
                     <section>
-                        <div id="intro" class="tab-pane fade-in active " role="tabpanel" aria-labelledby="intro-tab">
+                        <div id="intro" class="tab-pane fade-in " role="tabpanel" aria-labelledby="intro-tab">
                             <div class="page align-content-center justify-content-evenly bg-danger vh-100 w-auto p-2">
 
                                 <h1>Intro</h1>
                                 <p>Uses tabs and panels to display each page with height set to 100dvh.</p>
-                                <p>Fixed space for each page, no scroll, overflow hidden.</p>
+                                <p>Fixed space for each page, no scroll, overflow hidden. View code page is an example
+                                    of constraints.</p>
                                 <p>Promotes concise design.</p>
                                 <p>Tabs have the same background colour as the example pages but could be an image of
                                     each
@@ -139,7 +142,9 @@
                     <section>
                         <div id="page6" class="tab-pane fade-in" role="tabpanel" aria-labelledby="page6-tab">
                             <div class=" page align-content-center justify-content-evenly bg-primary vh-100 w-auto p-2">
-                                <h1>Page 6</h1>
+
+                                <div id="viewCodeFile"></div>
+
                             </div>
                         </div>
                     </section>
@@ -148,6 +153,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function () {
+            $("#viewCodeFile").load("ViewCodeFile.html");
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>

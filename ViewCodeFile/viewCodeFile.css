@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+    scrollbar-width: none;
+}
+
+.containerVcf {
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    border: darkgreen 2px solid;
+    background-color: #d1e7dd;
+    max-width: 45rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px gray;
+}
+
+/* main container for checkboxes */
+.fileViewCheck1,
+.fileViewCheck2 {
+    margin: 2rem auto;
+    padding: 1rem 0.5rem;
+    background-color: #03b2b2;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px gray;
+    transition: all 1s ease;
+
+}
+
+/* checkbox */
+.codeFileOpen {
+    display: none;
+}
+
+button,
+.codeFileButton1,
+.codeFileButton2,
+.codeFileButton3 {
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px gray;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: rgb(123, 122, 122) 0.5px solid;
+    transition: all 500ms ease;
+
+    &:hover {
+        box-shadow: 2px 4px 8px gray;
+        transform: scale(1.05);
+        border: rgb(183, 181, 181, 0.75) 0.5px solid;
+    }
+}
+
+.codeFileOpen,
+.codeFileButton {
+    position: absolute;
+}
+
+/* preview file content object*/
+.file {
+    display: grid;
+    grid-template-rows: 0fr;
+    position: relative;
+    margin: 0.25rem 0;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.fileContent {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.htmlWrapper {
+    height: 0;
+    overflow: auto;
+    scrollbar-color: #026363 #03b4b4;
+    scrollbar-width: thin;
+    font-size: 0.75em;
+    transition: all 1s ease;
+
+}
+
+.htmlWrapper.open {
+    height: 500px;
+
+}
+
+/* change button text on click */
+.codeFileButton2::before {
+    content: "View CSS source code";
+}
+
+.codeFileButton3::before {
+    content: "View JS source code";
+}
+
+#codeFile2:checked~.codeFileButton2::before {
+    content: "Hide CSS source code";
+}
+
+#codeFile3:checked~.codeFileButton3::before {
+    content: "Hide JS source code";
+}
+
+/* toggle view for files */
+#toggleButton:focus~.file {
+    grid-template-rows: 1fr;
+}
+
+#codeFile2:checked~.file {
+    grid-template-rows: 1fr;
+
+}
+
+#codeFile3:checked~.file {
+    grid-template-rows: 1fr;
+}
+
+.codeViewer {
+    background-color: aliceblue;
+}
