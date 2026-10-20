@@ -16,7 +16,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="Index/index.css">
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -89,6 +91,9 @@
                         </li>
                         <li class="nav-item shadow-sm rounded-pill mx-2">
                             <a class="nav-link p-2" href="./Navbars/index.html">Navbar's footer combined</a>
+                        </li>
+                        <li class="nav-item shadow-sm rounded-pill mx-2">
+                            <a class="nav-link p-2" href="./pages/ViewCodeFile.html">View code base</a>
                         </li>
                     </ul>
                 </div>
@@ -163,7 +168,21 @@
                         <div id="PDFView3" class="shadow rounded-2 bg-light"></div>
                     </div>
                 </div>
+                <br>
+                <p role="note"><em># Alternative code view page using jquery to insert it as a<a
+                            href="./pages/ViewCodeFile.html">
+                            modular block.</a> Sadly it
+                        clashes with this example (button doesn't work, browser has an issue) and so have not inserted
+                        it
+                        here
+                        but
+                        have added it
+                        successfully to
+                        other <a href="./pages/PageScrollMain.html"> scrolling/nav</a> pages to test.</em></p>
             </div>
+            <br>
+            <!--alternative code view-->
+            <div id="viewCodeFile"></div>
 
         </main>
 
@@ -416,7 +435,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" language="javascript" src="./js/javascript.js"></script>
+    <script type="text/javascript" language="javascript" src="Index/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.1/pdfobject.min.js"></script>
 
 </body>
