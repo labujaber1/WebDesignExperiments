@@ -22,30 +22,26 @@
 
 </head>
 
-<body class="p-0 m-0">
+<body>
 
-    <div class="bg-light m-0 p-0">
+    <div class="container-fluid">
         <header>
-
             <div class="container-fluid p-4 pt-5">
                 <div class="container text-center shadow p-4 rounded-2 bg-white">
                     <h1>Design experiments</h1>
-                    <p>A space to experiment with page and component designs influenced by new trends, old ideas, and
-                        general messing around.</p>
+                    <p>A space for a coder to experiment with page and component designs influenced by new trends, old
+                        ideas, and general messing around.</p>
                     <p>This page contains links to other pages containing page designs and grouped ideas but also
                         displays unique component ideas (for 2 minutes at least).
                         Experiments are done using custom css and as little javascript as possible whilst the main
                         layout uses bootstrap 5.
-                        Things to consider, everyone including this page uses flat layout due to the production line
-                        that is the working development process. So whats next?
                     </p>
                 </div>
             </div>
-
         </header>
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container text-center shadow p-4 my-2">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+            <div class="container text-center shadow p-4 mt-2">
                 <h2 class="navbar-brand mx-4">Page links</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -92,16 +88,19 @@
                         <li class="nav-item shadow-sm rounded-pill mx-2">
                             <a class="nav-link p-2" href="./pages/ViewCodeFile.html">View code base</a>
                         </li>
+                        <li class="nav-item shadow-sm rounded-pill mx-2">
+                            <a class="nav-link p-2" href="./pages/ViewTransitions.html">View transitions</a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
         </nav>
 
-        <main>
-
-            <div class="container text-center shadow p-4 my-5">
-                <h2>Components</h2>
+        <!-- Buttons -->
+        <div class="container shadow-lg p-4 mb-5 hoverEffect">
+            <details>
+                <summary>Buttons</summary>
                 <div class="container d-flex flex-wrap justify-content-center align-items-center">
                     <div class="unit text-center shadow p-4 bg-white rounded-2 m-2">
                         <p>Component 1</p>
@@ -131,12 +130,16 @@
                         <button class="">Button 6</button>
                     </div>
                 </div>
-            </div>
+            </details>
+        </div>
 
-            <div class="container">
-                <h3>ToDo: change html view to display code not render it.</h3>
-                <p>Can saveas manually but look for function.</p>
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 shadow-lg bg-success-subtle rounded-3">
+        <!-- code view -->
+        <div class="container bg-dark-subtle p-4 mb-5 shadow-lg hoverEffect">
+            <details>
+                <summary>View Code</summary>
+                <h3>View Current Page's Code</h3>
+                <p>This uses .txt files of the code for displaying it.</p>
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 shadow-lg rounded-3">
                     <div class="col my-2">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4>View css file</h4>
@@ -166,72 +169,77 @@
                     </div>
                 </div>
                 <br>
-                <p role="note"><em># Alternative code view page using jquery to insert it as a<a
+                <p role="note"><em># A better alternative code view page uses jquery to insert it as a<a
                             href="./pages/ViewCodeFile.html">
                             modular block.</a> Sadly it
                         clashes with this example (button doesn't work, browser has an issue) and so have not inserted
-                        it
-                        here
-                        but
-                        have added it
-                        successfully to
-                        other <a href="./pages/PageScrollMain.html"> scrolling/nav</a> pages to test.</em></p>
-            </div>
-            <br>
-            <!--alternative code view-->
-            <div id="viewCodeFile"></div>
+                        it here but have added it successfully to other <a href="./pages/PageScrollMain.html">
+                            scrolling/nav</a> pages to test.</em></p>
+            </details>
+        </div>
 
-        </main>
+        <!--alternative code view-->
+        <div id="viewCodeFile"></div>
 
-        <div class=" mt-3 p-1" style="background-image: url('./DisplayImages/images/expanding_gallery/underwater.jpg');
+        <!-- shadows and scaling effects -->
+        <div class="container mb-5 p-4 shadow-lg hoverEffect" style="background-image: url('./DisplayImages/images/expanding_gallery/underwater.jpg');
         background-size: cover;">
-            <div class="pb-3 text-center text-uppercase fs-4">Trying to get a pressure spread effect</div>
-            <!-- shadows with scaling effects -->
-            <div id="water_image" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 align-items-center">
-                <div id="image_on_water" class="col p-5 text-center">
-                    <h4>Image on water</h4>
-                    <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt=""
-                        class="w-75 m-2 light_shadow rounded-5" title="Tried with just CSS. mmm!">
+            <details>
+                <summary>Shadow Effects</summary>
+                <div class="pb-3 text-center text-uppercase fs-4">
 
+                    <p>Trying to get a pressure spread effect</p>
                 </div>
-                <div id="image_over_water" class="col p-5 text-center">
-                    <h6>SPLASH!</h6>
-                    <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt=""
-                        class="w-75 m-2 rounded-5" title="Tried with just CSS. mmmeh!">
-                    <h4>Image over water</h4>
-                </div>
-            </div>
-            <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Playing with shadow glowing effect,
-                not subtle.</div>
-            <!-- shadows with no effects -->
-            <div id="image_shadows" class="d-flex p-2 bg-black flex-wrap justify-content-evenly">
-                <figure class="m-4">
-                    <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt=""
-                        class=" d-flex m-2 shadow_radiant_light rounded-5 " title="radiant">
-                    <figcaption class="text-white">Radiant light class</figcaption>
-                </figure>
-                <figure class="m-4">
-                    <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt=""
-                        class=" d-flex m-2 shadow_vibrant_light rounded-5 " title="vibrant">
-                    <figcaption class="text-white">Vibrant light class</figcaption>
-                </figure>
-                <figure class="m-4">
-                    <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt=""
-                        class="d-flex m-2 shadow_glowing_light rounded-5 " title="glowing">
-                    <figcaption class="text-white">Glowing light class</figcaption>
-                </figure>
-                <figure class="m-4">
-                    <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt=""
-                        class="d-flex m-2 shadow_outer_light rounded-5 " title="outer">
-                    <figcaption class="text-white">Outer light class</figcaption>
-                </figure>
-            </div>
-            <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Using bootstrap 5 flexbox</div>
+                <!-- shadows with scaling effects -->
+                <div id="water_image" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 align-items-center">
+                    <div id="image_on_water" class="col p-5 text-center">
+                        <h4>Image on water</h4>
+                        <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt=""
+                            class="w-75 m-2 light_shadow rounded-5" title="Tried with just CSS. mmm!">
 
-            <!-- Flipping cards animation -->
-            <div class="container border border-white border-1 p-2">
-                <div class="text-white bg-black pb-3 text-center">
-                    <h4 class="text-uppercase py-2">Flipping cards</h4>
+                    </div>
+                    <div id="image_over_water" class="col p-5 text-center">
+                        <h6>SPLASH!</h6>
+                        <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt=""
+                            class="w-75 m-2 rounded-5" title="Tried with just CSS. mmmeh!">
+                        <h4>Image over water</h4>
+                    </div>
+                </div>
+                <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Playing with shadow glowing
+                    effect,
+                    not subtle.</div>
+                <!-- shadows with no effects -->
+                <div id="image_shadows" class="d-flex p-2 bg-black flex-wrap justify-content-evenly">
+                    <figure class="m-4">
+                        <img src="./DisplayImages/images/expanding_gallery/flower.jpg" alt=""
+                            class=" d-flex m-2 shadow_radiant_light rounded-5 " title="radiant">
+                        <figcaption class="text-white">Radiant light class</figcaption>
+                    </figure>
+                    <figure class="m-4">
+                        <img src="./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg" alt=""
+                            class=" d-flex m-2 shadow_vibrant_light rounded-5 " title="vibrant">
+                        <figcaption class="text-white">Vibrant light class</figcaption>
+                    </figure>
+                    <figure class="m-4">
+                        <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt=""
+                            class="d-flex m-2 shadow_glowing_light rounded-5 " title="glowing">
+                        <figcaption class="text-white">Glowing light class</figcaption>
+                    </figure>
+                    <figure class="m-4">
+                        <img src="./DisplayImages/images/expanding_gallery/ball_beach.jpg" alt=""
+                            class="d-flex m-2 shadow_outer_light rounded-5 " title="outer">
+                        <figcaption class="text-white">Outer light class</figcaption>
+                    </figure>
+                </div>
+                <div class="text-white bg-black pb-3 text-center text-uppercase fs-4">Using bootstrap 5 flexbox</div>
+            </details>
+        </div>
+
+        <!-- Flipping cards animation -->
+        <div class="container p-4 mb-5 shadow-lg bg-info-subtle hoverEffect">
+            <details>
+                <summary>Flipping Cards</summary>
+                <div class="text-white bg-black py-3 text-center">
                     <p>Using random picsum images.</p>
                     <p>These are common examples found everywhere such as w3schools.</p>
                 </div>
@@ -297,136 +305,152 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </details>
         </div>
 
-        <div class="container-fluid h-75  " style="background-image: url('./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg');
+        <!-- Glassmorphism effects -->
+        <div class="container mb-5 h-75 p-4 shadow-lg hoverEffect" style="background-image: url('./DisplayImages/images/expanding_gallery/red_dead_arthur.jpg');
                 background-size: cover;">
-            <h1>Various effects from ui.glass and css.glass generators.</h1>
-            <h4>Plenty of other sites available.</h4>
-            <div class="container d-flex flex-wrap py-5 justify-content-evenly">
-                <div class="glass_box glass_effect3 m-2">
-                    <h4>Glassmorphism effect 3</h4>
+            <details>
+                <summary>Glassmorphism Effects</summary>
+                <h1>Various effects from ui.glass and css.glass generators.</h1>
+                <h4>Plenty of other sites available.</h4>
+                <div class="container d-flex flex-wrap py-5 justify-content-evenly">
+                    <div class="glass_box glass_effect3 m-2">
+                        <h4>Glassmorphism effect 3</h4>
+                    </div>
+                    <div class="glass_box glass_effect1 text-white m-2">
+                        <h4>Glassmorphism effect 1</h4>
+                    </div>
+                    <div class="glass_box glass_effect2 m-2">
+                        <h4>Glassmorphism effect 2</h4>
+                    </div>
+
                 </div>
-                <div class="glass_box glass_effect1 text-white m-2">
-                    <h4>Glassmorphism effect 1</h4>
+            </details>
+        </div>
+
+        <!-- Expanding image cards on hover -->
+        <div id="expanding_card_container" class="container p-4 mb-5 shadow-lg hoverEffect">
+            <details>
+                <summary>Image Cards</summary>
+                <div class="d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="container text-white bg-black py-3 text-center text-uppercase fs-4">Expanding image
+                        cards on
+                        hover
+                    </div>
+                    <div id="ce1" class="card_expand">
+                        <div class="image_box">
+                            <img src="https://picsum.photos/300/300">
+                        </div>
+                        <div class="content_hidden">
+                            <h4>Hover over image</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nobis aliquam beatae alias iure veritatis, dolorum ratione
+                                sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
+                                error odit exercitationem nulla.
+                            </p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div id="ce2" class="card_expand">
+                        <div class="image_box">
+                            <img src="https://picsum.photos/300/301">
+                        </div>
+                        <div class="content_hidden">
+                            <h4>Using random images..</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nobis aliquam beatae alias iure veritatis, dolorum ratione
+                                sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
+                                error odit exercitationem nulla.
+                            </p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div id="ce3" class="card_expand">
+                        <div class="image_box">
+                            <img src="https://picsum.photos/300/302">
+                        </div>
+                        <div class="content_hidden">
+                            <h4>..from picsum</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nobis aliquam beatae alias iure veritatis, dolorum ratione
+                                sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
+                                error odit exercitationem nulla.
+                            </p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div id="ce4" class="card_expand">
+                        <div class="image_box">
+                            <img src="https://picsum.photos/300/303">
+                        </div>
+                        <div class="content_hidden">
+                            <h4>..glass effect, plain white</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nobis aliquam beatae alias iure veritatis, dolorum ratione
+                                sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
+                                error odit exercitationem nulla.
+                            </p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass_box glass_effect2 m-2">
-                    <h4>Glassmorphism effect 2</h4>
+            </details>
+        </div>
+
+        <!-- playing with perspective -->
+        <div class="container mb-5 shadow-lg p-4 bg-info hoverEffect">
+            <details>
+                <summary>Perspective</summary>
+                <div class="container persp_wrapper" style="background-image: url('https://picsum.photos/1000/500');
+                background-size: cover;">
+                    <div class="container text-white bg-black py-3 text-center text-uppercase fs-4">Playing a little
+                        with
+                        perspective</div>
+                    <div class="persp_bg2 "></div>
+                    <div class="persp_bg1 "></div>
+
+                    <div class="persp_container bg-primary-subtle p-2">
+                        <div id="persp_left">
+                            <h3>Overlaying cards</h3>
+                            <p>A little over kill with background having random image overlayed with two polygon shapes.
+                            </p>
+                            <p>Designcourse.com Gary Simon</p>
+                            <p>The more text added the further the cards move downwards as set to align in center.
+                                Not mobile friendly but nice perspective effect.
+                            </p>
+                        </div>
+                        <div id="persp_right">
+                            <ul>
+                                <li>
+                                    <img src="https://picsum.photos/100/100">
+                                    <span>
+                                        <strong>Other1</strong>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/100/101">
+                                    <span>
+                                        <strong>Other2</strong>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="https://picsum.photos/100/102">
+                                    <span>
+                                        <strong>Other3</strong>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="text-white bg-black py-3 text-center text-uppercase fs-4">Expanding image cards on hover</div>
-    <div id="expanding_card_container" class="d-flex flex-wrap justify-content-center align-items-center p-5">
-        <div id="ce1" class="card_expand">
-            <div class="image_box">
-                <img src="https://picsum.photos/300/300">
-            </div>
-            <div class="content_hidden">
-                <h4>Hover over image</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis aliquam beatae alias iure veritatis, dolorum ratione
-                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
-                    error odit exercitationem nulla.
-                </p>
-                <a href="">Read more</a>
-            </div>
-        </div>
-        <div id="ce2" class="card_expand">
-            <div class="image_box">
-                <img src="https://picsum.photos/300/301">
-            </div>
-            <div class="content_hidden">
-                <h4>Using random images..</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis aliquam beatae alias iure veritatis, dolorum ratione
-                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
-                    error odit exercitationem nulla.
-                </p>
-                <a href="">Read more</a>
-            </div>
-        </div>
-        <div id="ce3" class="card_expand">
-            <div class="image_box">
-                <img src="https://picsum.photos/300/302">
-            </div>
-            <div class="content_hidden">
-                <h4>..from picsum</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis aliquam beatae alias iure veritatis, dolorum ratione
-                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
-                    error odit exercitationem nulla.
-                </p>
-                <a href="">Read more</a>
-            </div>
-        </div>
-        <div id="ce4" class="card_expand">
-            <div class="image_box">
-                <img src="https://picsum.photos/300/303">
-            </div>
-            <div class="content_hidden">
-                <h4>..glass effect, plain white</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis aliquam beatae alias iure veritatis, dolorum ratione
-                    sit iusto amet minus qui, sequi commodi maxime temporibus rerum,
-                    error odit exercitationem nulla.
-                </p>
-                <a href="">Read more</a>
-            </div>
+            </details>
         </div>
     </div>
-
-    <!-- playing with perspective -->
-
-    <div class="text-white bg-black py-3 text-center text-uppercase fs-4">Playing a little with perspective</div>
-
-    <div class="persp_wrapper" style="background-image: url('https://picsum.photos/1000/500');
-    background-size: cover;">
-        <div class="persp_bg2 "></div>
-        <div class="persp_bg1 "></div>
-
-        <div class="persp_container bg-primary-subtle p-2">
-            <div id="persp_left">
-                <h3>Overlaying cards</h3>
-                <p>A little over kill with background having random image overlayed with two polygon shapes.</p>
-                <p>Designcourse.com Gary Simon</p>
-                <p>The more text added the further the cards move downwards as set to align in center.
-                    Not mobile friendly but nice perspective effect.
-                </p>
-            </div>
-            <div id="persp_right">
-
-                <ul>
-                    <li>
-                        <img src="https://picsum.photos/100/100">
-                        <span>
-                            <strong>Other1</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="https://picsum.photos/100/101">
-                        <span>
-                            <strong>Other2</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="https://picsum.photos/100/102">
-                        <span>
-                            <strong>Other3</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

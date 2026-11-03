@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Transitions</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="view-transition" content="same-origin">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for bootstrap css (js at bottom of page)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../ViewTransitions/viewTransitions.css">
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        @media (prefers-reduced-motion: no-preference) {
+
+            @view-transition {
+                navigation: auto;
+                types: slide;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!--load header.html via jquery load-->
+        <div class="header" id="header"></div>
+    </header>
+    <main>
+        <div class="container-fluid bg-black">
+            <div class="text-white text-center">
+                <h1 class="">Transitions Page</h1>
+                <p class="">A test page to exhibit the view transitions effect from card image to post
+                    page.</p>
+                <p> Click an image to see..</p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-3 p-2">
+                <div class="col-md">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <div class="imgCard bg-black">
+                            <a class="postLink1" href="../ViewTransitions/TestPage1.html"><img id="TestPage1"
+                                    class="card-img-bottom" src="../ImagesLibrary/coffee-cups.jpg" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title title1">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <div class="imgCard bg-black">
+                            <a class="" href="../ViewTransitions/TestPage2.html"><img class="card-img-top"
+                                    src="../ImagesLibrary/down-view-woods-water.jpg" alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <div class="imgCard bg-black">
+                            <a class="" href=""><img class="card-img-top" src="../ImagesLibrary/cat-lying-back.jpg"
+                                    alt=""></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row p-2">
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/dessert-gnus.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/deer-mountain.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/island-in-lake.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row p-2">
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/koala-tree.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/mountain-deer.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-lg-4 m-sm-2 border border-0">
+                        <a class="imgCard bg-black" href=""><img class="card-img-top"
+                                src="../ImagesLibrary/mountain-lake.jpg" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Title 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit,..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--load footer.html via jquery load-->
+        <div class="footer" id="footer"></div>
+    </footer>
+    <div class="container w-75">
+        <div id="viewCodeFile"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script defer type="text/javascript" language="javascript" src="../ViewTransitions/viewTransitions.js"></script>
+
+    <script>
+        $(function () {
+            $("#viewCodeFile").load("../pages/ViewCodeFile.html");
+        });
+    </script>
+
+</body>
+
+</html>

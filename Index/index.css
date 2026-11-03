@@ -24,6 +24,17 @@
     padding: 3px;
 }
 
+.hoverEffect {
+
+    opacity: 0.9;
+}
+
+.hoverEffect:hover {
+
+    border-radius: 10px;
+    opacity: 1;
+}
+
 /* button 1 */
 .button1 {
     content: '';

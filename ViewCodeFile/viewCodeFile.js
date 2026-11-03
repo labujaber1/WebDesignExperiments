@@ -1,3 +1,18 @@
+// get current url
+// set path with page name as placeholder
+const openedPage = window.location.pathname;
+const cssFile = openedPage.replace(
+  /\/pages\/([^/]+)\.html/,
+  (_, pageName) => `../${pageName}/${pageName}.css`
+)
+const cssObjData = document.getElementById("cssObject");
+cssObjData.setAttribute("data",cssFile);
+const jsFile = openedPage.replace(
+  /\/pages\/([^/]+)\.html/,
+  (_, pageName) => `../${pageName}/${pageName}.js`
+)
+const jsObjData = document.getElementById("jsObject");
+jsObjData.setAttribute("data",jsFile);
 
 //load html code to preview area
 async function toggleSource() {
@@ -41,21 +56,4 @@ async function toggleSource() {
   }
 }
 
-// get current url
-// set path with page name as placeholder
-function loadFileNames() {
-  const openedPage = window.location.pathname;
-  const cssFile = openedPage.replace(
-    /\/pages\/([^/]+)\.html/,
-    (_, pageName) => `../${pageName}/${pageName}.css`
-  )
-  const cssObjData = document.getElementById("cssObject");
-  cssObjData.setAttribute("data",cssFile);
-  const jsFile = openedPage.replace(
-    /\/pages\/([^/]+)\.html/,
-    (_, pageName) => `../${pageName}/${pageName}.js`
-  )
-  const jsObjData = document.getElementById("jsObject");
-  jsObjData.setAttribute("data",jsFile);
-}
-window.onload = function() {loadFileNames();}
+ 
