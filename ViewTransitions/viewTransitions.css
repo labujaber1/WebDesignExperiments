@@ -1,4 +1,9 @@
 /*setup pages*/
+body {
+    background-color: #000000;
+
+
+}
 
 /* header */
 .bgImage {
@@ -62,20 +67,41 @@ a {
     text-decoration: none;
 }
 
+.fcs:has(.fc:hover) .fc:not(:hover) {
+    opacity: 0.5;
+    transition: opacity 500ms ease;
+}
+
+.backing {
+    background: rgba(91, 90, 90, 0.26);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+
+}
+
 /*transitions*/
 
+/* horrible transition effect for this card design. */
+/* Due to header and footer in separate files and served client side via js script*/
+/* works better with repeated header code*/
+
+/*This allows the browser to do the work of transitions in basic form*/
+/*post/test pages for the first link/image*/
 .postTitle1 {
     view-transition-name: postTitle1;
 }
 
+/*viewTransitions.html*/
 .title1 {
     view-transition-name: postTitle1;
 }
 
-.postLink1 {
+/*viewTransitions.html*/
+.postLinkImage1 {
     view-transition-name: postLink1;
 }
 
+/*postPage.html*/
 .postImage1 {
     view-transition-name: postLink1;
 }

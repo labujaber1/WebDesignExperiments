@@ -25,12 +25,10 @@
 }
 
 .hoverEffect {
-
     opacity: 0.9;
 }
 
 .hoverEffect:hover {
-
     border-radius: 10px;
     opacity: 1;
 }

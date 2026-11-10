@@ -26,6 +26,7 @@ async function loadHeaderFooter() {
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
     fetch('../viewTransitions/VT-header.html')
+    
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok retrieving header');
@@ -35,12 +36,24 @@ async function loadHeaderFooter() {
     .then(html => {
         //add header to innerHTML using a slide in view transition from display:none;
         header.innerHTML = html;
-       
-        
     })
     .catch(error => {
         header.innerHTML = '<p>Error loading header</p>';
         console.error('Error loading header:', error);
+    });
+    fetch('../viewTransitions/frontPage.html')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok retrieving footer');
+        }
+        return response.text();
+    })
+    .then(html => {
+        frontPage.innerHTML = html;
+    })
+    .catch(error => {
+        frontPage.innerHTML = '<p>Error loading front page</p>';
+        console.error('Error loading front page:', error);
     });
     fetch('../viewTransitions/VT-footer.html')
     .then(response => {
