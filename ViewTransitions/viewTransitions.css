@@ -1,3 +1,5 @@
+@import url("../ViewTransitions/transitions.css");
+
 /*setup pages*/
 body {
     background-color: #000000;
@@ -77,31 +79,4 @@ a {
     backdrop-filter: blur(5px);
     border-radius: 10px;
 
-}
-
-/*transitions*/
-
-/* horrible transition effect for this card design. */
-/* Due to header and footer in separate files and served client side via js script*/
-/* works better with repeated header code*/
-
-/*This allows the browser to do the work of transitions in basic form*/
-/*post/test pages for the first link/image*/
-.postTitle1 {
-    view-transition-name: postTitle1;
-}
-
-/*viewTransitions.html*/
-.title1 {
-    view-transition-name: postTitle1;
-}
-
-/*viewTransitions.html*/
-.postLinkImage1 {
-    view-transition-name: postLink1;
-}
-
-/*postPage.html*/
-.postImage1 {
-    view-transition-name: postLink1;
 }

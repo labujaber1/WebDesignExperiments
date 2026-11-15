@@ -41,7 +41,7 @@ async function loadHeaderFooter() {
         header.innerHTML = '<p>Error loading header</p>';
         console.error('Error loading header:', error);
     });
-    fetch('../viewTransitions/frontPage.html')
+    /*fetch('../viewTransitions/frontPage.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok retrieving footer');
@@ -54,7 +54,7 @@ async function loadHeaderFooter() {
     .catch(error => {
         frontPage.innerHTML = '<p>Error loading front page</p>';
         console.error('Error loading front page:', error);
-    });
+    });*/
     fetch('../viewTransitions/VT-footer.html')
     .then(response => {
         if (!response.ok) {
