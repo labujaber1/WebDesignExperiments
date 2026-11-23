@@ -1,4 +1,10 @@
-@import url("../ViewTransitions/transitions.css");
+/*@import url("../ViewTransitions/transitions.css");*/
+/*Each html page must have this including types, does not work if just in css. Its an api opt in requirement*/
+/*wrap in <style> tags in the <head>*/
+@view-transition {
+    navigation: auto;
+    types: slides-vertically slideIn spill forward comes goes;
+}
 
 /*setup pages*/
 body {
@@ -52,16 +58,17 @@ body {
 .imgCard {
     position: relative;
     display: flex;
-    align-items: center;
-    bottom: 0;
+    align-items: end;
+    justify-items: end;
+
     transition: opacity 500ms ease;
-    max-height: 25rem;
-    max-width: auto;
+    max-height: 20rem;
+    width: auto;
+    object-fit: cover;
     overflow: hidden;
 
     &:hover {
         opacity: 0.9;
-
     }
 }
 
@@ -69,6 +76,7 @@ a {
     text-decoration: none;
 }
 
+/*footer cards*/
 .fcs:has(.fc:hover) .fc:not(:hover) {
     opacity: 0.5;
     transition: opacity 500ms ease;
@@ -78,5 +86,255 @@ a {
     background: rgba(91, 90, 90, 0.26);
     backdrop-filter: blur(5px);
     border-radius: 10px;
+}
 
+.page6 img {
+    max-height: 20rem;
+    width: min-content;
+}
+
+.white-shadow {
+    box-shadow: 0 3px 10px rgba(245, 245, 245, 0.6);
+}
+
+/*transitions*/
+/*home*/
+.vt-card {
+    view-transition-name: vt-cc;
+}
+
+@keyframes slide-upwards {
+    from {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-downwards {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-125%);
+        opacity: 0;
+    }
+}
+
+html:active-view-transition-type(slides-vertically)::view-transition-old(vt-cc) {
+    animation: slide-downwards 600ms ease forwards;
+}
+
+html:active-view-transition-type(slides-vertically)::view-transition-new(vt-cc) {
+    animation: slide-upwards 1s ease forwards;
+}
+
+/*page1*/
+/*This allows the browser to do the work of transitions in basic form*/
+/*Doesn't always work and can take a few clicks before it does as its expected*/
+.postTitle1 {
+    view-transition-name: postTitle1;
+
+}
+
+/*viewTransitions.html*/
+.title1 {
+    view-transition-name: postTitle1;
+}
+
+/*viewTransitions.html*/
+.postLinkImage1 {
+    view-transition-name: postLink1;
+}
+
+/*postPage.html*/
+.postImage1 {
+    view-transition-name: postLink1;
+}
+
+/*post cards */
+/*page3*/
+/*one way forwards animation*/
+@keyframes slide-to-left {
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translateX(100vw);
+    }
+}
+
+html:active-view-transition-type(slideIn) {
+
+    /*cancel all default transitions*/
+    :root {
+        view-transition-name: none;
+    }
+
+    .page3 {
+        view-transition-name: post;
+    }
+
+    &::view-transition-old(post) {
+        animation: slide-to-left 1.5s ease forwards;
+    }
+
+    &::view-transition-new(post) {
+        animation: slide-from-right 1.5s ease forwards;
+    }
+
+}
+
+/*page4*/
+@keyframes zoom-rotate-out {
+    to {
+        transform: scale(0) rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes zoom-rotate-in {
+    from {
+        transform: scale(0) rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+
+html:active-view-transition-type(spill) {
+    :root {
+        view-transition-name: none;
+    }
+
+    .page4 {
+        view-transition-name: page;
+    }
+
+    &::view-transition-old(page) {
+        /*animation-name: spillIn;*/
+        animation: zoom-rotate-out 2s ease forwards;
+        transform-origin: right;
+    }
+
+    &::view-transition-new(page) {
+        /*animation-name: spillOut;*/
+        animation: zoom-rotate-in 2s ease forwards;
+        transform-origin: left;
+    }
+}
+
+
+/*page5*/
+/*every transition must have unique name*/
+.page5-title {
+    view-transition-name: p5-title;
+}
+
+.page5-img {
+    view-transition-name: p5-img;
+}
+
+.page5-intro {
+    view-transition-name: p5-intro;
+}
+
+.page5-sub-heading1 {
+    view-transition-name: p5-sub-heading1;
+}
+
+.page5-sub-heading2 {
+    view-transition-name: p5-sub-heading2;
+}
+
+/*group title and image page transition*/
+::view-transition-group(p5-title) {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+::view-transition-group(p5-img) {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*separate action for each text, not page transition*/
+html:active-view-transition-type(forward)::view-transition-old(p5-intro) {
+    animation: fade-out 1.2s ease-in 500ms forwards;
+}
+
+html:active-view-transition-type(forward)::view-transition-new(p5-intro) {
+    animation: fade-in 1.2s ease-in 500ms forwards;
+}
+
+html:active-view-transition-type(forward)::view-transition-old(p5-sub-heading1) {
+    animation: fade-out 1.2s ease-in 1s forwards;
+}
+
+html:active-view-transition-type(forward)::view-transition-new(p5-sub-heading1) {
+    animation: fade-in 1.2s ease-in 1s forwards;
+}
+
+html:active-view-transition-type(forward)::view-transition-old(p5-sub-heading2) {
+    animation: fade-out 1.2s ease-in 1.5s forwards;
+}
+
+html:active-view-transition-type(forward)::view-transition-new(p5-sub-heading2) {
+    animation: fade-in 1.2s ease-in 1.5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateX(125%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+}
+
+/*page6*/
+/*view transition image pair can add styles as well as take animation to old and new state
+instead of doing it separately to each old and new transition state*/
+/*target vt-page6Image className in both home image and page6 image*/
+/*single name target*/
+/*tree: view-transitions
+-view-transitions-group()
+--view-transitions-image-pair()
+---view-transitions-old(), view-transitions-new()*/
+.vt-page6Image {
+    view-transition-name: page6Image;
+}
+
+html:active-view-transition-type(comes)::view-transition-image-pair(page6Image) {
+    animation: come 2s ease forwards;
+}
+
+@keyframes come {
+    from {
+        transform: scale(0) translate(-150%);
+        opacity: 0.5;
+    }
 }
